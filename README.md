@@ -1,4 +1,4 @@
-# Ejercicios de Java, Servlets, Spring y Microservicios
+# Máster en Desarrollo Java/JavaEE
 
 Este repositorio contiene una serie de ejercicios prácticos para aprender y dominar diversos aspectos de la programación en Java, desde lo más básico hasta el desarrollo de aplicaciones empresariales usando Spring y microservicios. Los ejercicios cubren temas como la programación orientada a objetos, pruebas unitarias, servlets, JSP, API REST, persistencia de datos y el desarrollo de aplicaciones con Spring MVC.
 
