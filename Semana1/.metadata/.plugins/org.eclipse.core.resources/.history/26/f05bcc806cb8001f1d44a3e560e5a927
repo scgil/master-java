@@ -1,0 +1,23 @@
+package com.cursojava.funcionalidades.test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+import com.cursojava.funcionalidades.ConversorEuroPesetaVice;
+
+class ConversorEuroPesetaVIceTest {
+
+	@Test
+	@DisplayName("Conversión Euro a Peseta")
+	void test() {
+		ConversorEuroPesetaVice convertirEuroPeseta = new ConversorEuroPesetaVice();
+		double tipoConversion = 166.386;
+		double euros = 2.0;
+		double esperado = 2*tipoConversion;
+		double obtenido = convertirEuroPeseta.convertirEuroPeseta(euros);
+		assertEquals(esperado, obtenido);
+	}
+
+}

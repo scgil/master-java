@@ -1,0 +1,10 @@
+package com.cursojava.modelo;
+
+public class Flauta extends Instrumento {
+
+	public Flauta(String nombreInstrumento, Tipo tipo) {
+		super(nombreInstrumento, tipo);
+		// TODO Auto-generated constructor stub
+	}
+
+}

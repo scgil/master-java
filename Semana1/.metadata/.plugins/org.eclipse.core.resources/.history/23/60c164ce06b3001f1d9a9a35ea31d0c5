@@ -1,0 +1,19 @@
+package com.cursojava.modelo;
+
+public class Flauta extends Instrumento {
+	
+	String modelo;
+	
+	public Flauta(String nombreInstrumento, Tipo tipo, String modelo) {
+		super(nombreInstrumento, tipo);
+		this.modelo = modelo;
+	}
+
+	@Override
+	public void tocar() {
+		super.tocar();
+		System.out.println("Soplando");
+	}
+	
+
+}

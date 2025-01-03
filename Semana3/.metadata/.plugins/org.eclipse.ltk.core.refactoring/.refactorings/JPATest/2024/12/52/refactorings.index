@@ -1,0 +1,11 @@
+1735206669416	Rename package 'com.curso.model'
+1735206799653	Rename type 'IComentarioRespositoryImpl'
+1735210530171	Delete element
+1735210799518	Delete element
+1735211014715	Rename compilation unit 'IComentarioRespositoryImpl.java'
+1735211029496	Rename type 'INoticiaRespositoryImpl'
+1735215937522	Rename package 'com.curso.principales'
+1735223197182	Rename type 'ComentarioRespositoryImpl'
+1735223219039	Rename type 'NoticiaRespositoryImpl'
+1735223403863	Rename type 'Principal'
+1735223506754	Rename type 'IComentarioRespository'

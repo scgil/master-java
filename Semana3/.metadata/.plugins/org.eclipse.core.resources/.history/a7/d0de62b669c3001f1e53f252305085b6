@@ -1,0 +1,19 @@
+package com.curso.model;
+
+public class Comentario {
+	@Id
+    private Long id;  // Clave primaria
+
+    private String texto;
+
+    private String autor;
+
+
+
+    @ManyToOne(fetch = FetchType.LAZY)
+
+    @JoinColumn(name = "titulo_noticia")  // Clave foránea
+
+    private Noticia noticia;
+
+}

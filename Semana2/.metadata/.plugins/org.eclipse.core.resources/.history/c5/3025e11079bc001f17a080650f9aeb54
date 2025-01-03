@@ -1,0 +1,50 @@
+package com.curso.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.curso.modelo.Producto;
+
+public class ProductoService {
+
+	private List<Producto> productos = ArrayList<>(Arrays.asList(new Producto("Nevera", "Electrodomesticos", 500.50, 5),
+			new Producto("Lavadora", "Electrodomesticos", 350.10, 3),
+			new Producto("Pantalon", "Textil", 50.0, 10),
+			new Producto("Camisa", "Textil", 42.0, 15)));
+			
+	public List<Producto> productosPorCategoria(String categoria) {
+		List<Producto> productosCategoria = new ArrayList<>();
+		for(Producto producto :productos) {
+			if(producto.getCategoria().equals(categoria)) {
+				productosCategoria.add(producto);
+			}
+			
+		}
+		return productosCategoria;
+		
+	}
+	
+	public List<String> categorias(){
+		List<String> categorias = new ArrayList<>();
+		for(Producto producto :productos) {
+			
+			if(!categorias.contains(producto.getCategoria())) {
+				categorias.add(producto.getCategoria());
+			}
+			
+		}
+		return categorias;
+	}
+	
+	public List<Producto> productos(){
+		return productos;
+	}
+	
+	public void insertarProducto(Producto producto) {
+		productos.add(producto);
+		
+	}
+	
+	
+
+}

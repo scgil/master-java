@@ -1,0 +1,12 @@
+package repositorio;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.curso.modelo.Comentario;
+
+public interface IComentarioRespository {
+	public List<Comentario> findAll();
+	public List<Comentario> findByAutor(String autor);
+	public Optional<List<Comentario>> findComentariosByNoticia(String titulo);
+}

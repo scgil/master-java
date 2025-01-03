@@ -1,0 +1,16 @@
+package com.cursojava.test;
+
+import static org.junit.jupiter.api.Assertions.fail;
+
+import org.junit.jupiter.api.Test;
+
+class NotaTest {
+
+	@Test
+	void test() {
+		Nota nota1 = new Nota("lengua", 8);
+		Nota nota2 = new Nota("lengua", 7);
+		Nota nota3 = new Nota("sociales", 7);
+	}
+
+}

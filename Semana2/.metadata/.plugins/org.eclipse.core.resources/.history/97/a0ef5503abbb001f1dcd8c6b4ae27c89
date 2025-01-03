@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ejemplo convertir a mayúsculas</title>
+</head>
+<body>
+<form action="MayusculasServlet" method="post">
+Frase : <input type="text" name="frase"><br>
+<input type="submit" value="Convertir a mayúsculas">
+</form>
+</body>
+</html>

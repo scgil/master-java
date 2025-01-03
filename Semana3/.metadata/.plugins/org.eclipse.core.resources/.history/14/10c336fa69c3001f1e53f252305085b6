@@ -1,0 +1,26 @@
+package com.curso.model;
+
+import java.io.Serializable;
+
+import jakarta.persistence.FetchType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+
+public class Comentario implements Serializable{
+	@Id
+    private Long id;  // Clave primaria
+
+    private String texto;
+
+    private String autor;
+
+
+
+    @ManyToOne(fetch = FetchType.LAZY)
+
+    @JoinColumn(name = "titulo_noticia")  // Clave foránea
+
+    private Noticia noticia;
+
+}

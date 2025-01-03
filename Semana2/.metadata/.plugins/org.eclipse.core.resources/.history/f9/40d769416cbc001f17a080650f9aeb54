@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Gestion de productos</title>
+</head>
+<body>
+
+<a href="FrontControlador?option=alta">insertar</a><br>
+<a href="FrontControlador?option=baja">borrar</a><br>
+<a href="FrontControlador?option=modificar">modificación</a><br>
+<a href="FrontControlador?option=listado">listar</a><br>
+<a href="FrontControlador?option=buscar">buscar</a><br>
+</body>
+</html>

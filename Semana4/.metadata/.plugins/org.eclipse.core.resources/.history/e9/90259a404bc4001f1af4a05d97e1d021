@@ -1,0 +1,42 @@
+package com.curso.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.curso.model.Libro;
+
+@Service
+public class LibroServiceImpl implements LibroService {
+
+	@Override
+	public List<Libro> libros() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Libro buscarLibro(int isbn) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void altaLibro(Libro libro) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void actualizar(Libro libro) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Libro> eliminarLibro(int isbn) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

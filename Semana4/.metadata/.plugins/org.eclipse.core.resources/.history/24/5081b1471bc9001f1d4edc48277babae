@@ -1,0 +1,92 @@
+package com.curso.controller;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
+import com.curso.model.Vuelo;
+
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+public class VueloControllerTest {
+
+    @Autowired
+    private TestRestTemplate restTemplate;
+
+    private int plazasBadRequest;
+    private int plazasOkay;
+
+    @BeforeEach
+    void setUp() {
+        // Configurar el objeto vuelo según sea necesario
+        plazasBadRequest = 5;
+    }
+
+    @Test
+    void testFindAllVuelos() {
+        ResponseEntity<List> response = restTemplate.exchange("/api/vuelos", HttpMethod.GET, null, List.class);
+
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertNotNull(response.getBody());
+        assertFalse(response.getBody().isEmpty());
+    }
+
+    @Test
+    void testFindVuelosDisponibles() {
+        ResponseEntity<List> response = restTemplate.exchange("/api/vuelos/" + plazasOkay, HttpMethod.GET, null, List.class);
+
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertNotNull(response.getBody());
+        assertFalse(response.getBody().isEmpty());
+    }
+
+    @Test
+    void testFindVuelosDisponiblesBadRequest() {
+        int plazasInvalidas = -1;
+        ResponseEntity<List> response = restTemplate.exchange("/api/vuelos/" + plazasBadRequest, HttpMethod.GET, null, List.class);
+
+        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
+        assertNull(response.getBody());
+    }
+
+    @Test
+    void testActualizarPlazas() {
+        int id = 1;
+        int plazasReserva = 2;
+        HttpEntity<Void> request = new HttpEntity<>(null);
+        ResponseEntity<Void> response = restTemplate.exchange("/api/vuelos/" + id + "/" + plazasOkay, HttpMethod.PATCH, request, Void.class);
+
+        assertEquals(HttpStatus.NO_CONTENT, response.getStatusCode());
+    }
+
+    @Test
+    void testActualizarPlazasBadRequest() {
+        int id = 1;
+        int plazasReservaInvalidas = -1;
+        HttpEntity<Void> request = new HttpEntity<>(null);
+        ResponseEntity<Void> response = restTemplate.exchange("/api/vuelos/" + id + "/" + plazasReservaInvalidas, HttpMethod.PATCH, request, Void.class);
+
+        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
+    }
+
+    @Test
+    void testActualizarPlazasNotFound() {
+        int idInexistente = 999;
+        int plazasReserva = 2;
+        HttpEntity<Void> request = new HttpEntity<>(null);
+        ResponseEntity<Void> response = restTemplate.exchange("/api/vuelos/" + idInexistente + "/" + plazasReserva, HttpMethod.PATCH, request, Void.class);
+
+        assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
+    }
+}

@@ -1,0 +1,74 @@
+package com.curso.dao;
+
+import java.util.List;
+
+import com.curso.modelo.Pelicula;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
+import jakarta.persistence.TypedQuery;
+
+/**
+ * Clase PeliculaDAO realiza operaciones con la entidad Pelicula
+ * @author Sergio Castro 
+ * @version 1.0 2023/12/23
+ */
+public class PeliculaDAO implements IPelicula {
+
+	public void findAll() {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("videoclub");
+		EntityManager em = emf.createEntityManager();
+		
+		TypedQuery<Pelicula> consulta = em.createQuery("SELECT p FROM Pelicula p", Pelicula.class);
+		List<Pelicula> peliculas = consulta.getResultList();
+		
+		for(Pelicula pelicula: peliculas) {
+			System.out.println(pelicula);
+		}
+
+	}
+
+	public void findByDirectorNombre() {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("videoclub");
+		EntityManager em = emf.createEntityManager();
+		
+		TypedQuery<Pelicula> consulta = em.createQuery("SELECT p FROM Pelicula p WHERE p.nombreDirector= :director", Pelicula.class);
+		
+		consulta.setParameter("director", "Pepito");
+		
+		List<Pelicula> peliculas = consulta.getResultList();
+		
+		for(Pelicula pelicula: peliculas) {
+			System.out.println(pelicula);
+		}
+
+	}
+
+	public void findByDirectorLikeNombre() {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("videoclub");
+		EntityManager em = emf.createEntityManager();
+		
+		TypedQuery<Pelicula> consulta = em.createQuery("SELECT p FROM Pelicula p WHERE p.nombreDirector LIKE :director", Pelicula.class);
+		
+		consulta.setParameter("director", "Pepito");
+		
+		List<Pelicula> peliculas = consulta.getResultList();
+		
+		for(Pelicula pelicula: peliculas) {
+			System.out.println(pelicula);
+		}
+
+	}
+
+	public void findByDirectorIn() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void findByPrecio() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

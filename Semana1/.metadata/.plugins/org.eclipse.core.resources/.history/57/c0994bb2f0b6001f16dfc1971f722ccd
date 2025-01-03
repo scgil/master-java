@@ -1,0 +1,31 @@
+package com.cursojava.modelo;
+
+import com.cursojava.interfaces.Mascota;
+
+public class Gato extends Animal implements Mascota {
+    private String nombre;
+
+    public Gato() {
+        super(4);
+    }
+
+    @Override
+    public void comer() {
+        System.out.println("A los gatos les gusta comer peces y arañas.");
+    }
+
+    @Override
+    public void jugar() {
+        System.out.println("A " + nombre + " le gusta jugar con pelotas.");
+    }
+
+    @Override
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    @Override
+    public String getNombre() {
+        return nombre;
+    }
+}

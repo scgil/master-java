@@ -1,0 +1,6 @@
+package com.curso.controller;
+
+@RestController
+public class EjemplarController {
+
+}

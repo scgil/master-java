@@ -1,0 +1,89 @@
+package com.curso.controller;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
+import com.curso.model.ReservaRequestDTO;
+
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+public class ReservaControllerTest {
+
+    @Autowired
+    private TestRestTemplate restTemplate;
+
+    private ReservaRequestDTO reservaRequestDTO;
+    private String nombreHotel;
+
+    @BeforeEach
+    void setUp() {
+        reservaRequestDTO = new ReservaRequestDTO();
+        reservaRequestDTO.setNombreCliente("Pepito");
+        reservaRequestDTO.setDni("12345678a");;
+        reservaRequestDTO.setIdVuelo(2);
+        reservaRequestDTO.setIdHotel(1);
+        
+        
+        nombreHotel = "Sol";
+    }
+
+    @Test
+    void testAltaReserva() {
+        HttpEntity<ReservaRequestDTO> request = new HttpEntity<>(reservaRequestDTO);
+        ResponseEntity<String> response = restTemplate.exchange("http://localhost:9090/api/reservas", HttpMethod.POST, request, String.class);
+
+        assertEquals(HttpStatus.CREATED, response.getStatusCode());
+        assertEquals("Reserva creada", response.getBody());
+    }
+
+    @Test
+    void testAltaReservaBadRequest() {
+        // Configurar reservaRequestDTO para que cause un error
+        reservaRequestDTO = null; // O cualquier otra configuración que cause un error
+
+        HttpEntity<ReservaRequestDTO> request = new HttpEntity<>(reservaRequestDTO);
+        ResponseEntity<String> response = restTemplate.exchange("/reservas", HttpMethod.POST, request, String.class);
+
+        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
+    }
+
+    @Test
+    void testFindReservasByNombreHotel() {
+        ResponseEntity<List> response = restTemplate.exchange("/reservas/" + nombreHotel, HttpMethod.GET, null, List.class);
+
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+        assertNotNull(response.getBody());
+        assertFalse(response.getBody().isEmpty());
+    }
+
+    @Test
+    void testFindReservasByNombreHotelNotFound() {
+        String nombreHotelInexistente = "Hotel Inexistente";
+        ResponseEntity<List> response = restTemplate.exchange("/reservas/" + nombreHotelInexistente, HttpMethod.GET, null, List.class);
+
+        assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
+        assertNull(response.getBody());
+    }
+
+    @Test
+    void testFindReservasByNombreHotelBadRequest() {
+        String nombreHotelInvalido = ""; // O cualquier otra configuración que cause un error
+        ResponseEntity<List> response = restTemplate.exchange("/reservas/" + nombreHotelInvalido, HttpMethod.GET, null, List.class);
+
+        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
+        assertNull(response.getBody());
+    }
+}

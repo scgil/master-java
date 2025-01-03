@@ -1,0 +1,14 @@
+package com.cursojava.modelo;
+
+public class Mascota extends Animal{
+	protected String nombre;
+	public Mascota(int numPatas, String nombre) {
+		super(numPatas);
+		
+	}
+	void setNombre(String nombre);
+    String getNombre();
+    void jugar()
+	
+
+}

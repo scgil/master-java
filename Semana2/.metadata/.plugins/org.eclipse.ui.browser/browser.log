@@ -1,0 +1,145 @@
+
+dic 13, 2024 09:09:55.688 NEW SESSION
+dic 13, 2024 09:09:55.689 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 09:10:18.142 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 13, 2024 09:10:54.775 [940:6140:1213/091054.774:ERROR:CONSOLE(1)] "Unknown VE context: language-mismatch    at new He (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:98934)
+dic 13, 2024 09:10:54.776     at devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:194918
+dic 13, 2024 09:10:54.776     at new ci (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:195314)
+dic 13, 2024 09:10:54.779     at ci.instance (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:195436)
+dic 13, 2024 09:10:54.779     at O.presentUI (devtools://devtools/bundled/devtools-frontend/front_end/panels/emulation/emulation.js:1:58454)
+dic 13, 2024 09:10:54.780     at #I (devtools://devtools/bundled/devtools-frontend/front_end/entrypoints/main/main.js:1:17402)
+dic 13, 2024 09:10:54.780     at #v (devtools://devtools/bundled/devtools-frontend/front_end/entrypoints/main/main.js:1:17197)", source: devtools://devtools/bundled/devtools-frontend/front_end/ui/visual_logging/visual_logging.js (1)
+dic 13, 2024 09:50:25.331 [940:6140:1213/095025.331:ERROR:device_event_log_impl.cc(201)] [09:50:25.332] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
+dic 13, 2024 12:39:21.400 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 12:39:54.456 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 13, 2024 12:56:23.202 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 12:59:31.226 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 13:00:04.168 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 13, 2024 13:15:46.956 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 13:16:13.629 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 13, 2024 13:54:41.906 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 13:55:01.488 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 15:02:24.305 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 15:05:52.469 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 15:14:42.669 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 15:14:57.328 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 15:15:26.813 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 15:17:41.57 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 15:17:52.216 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 15:36:00.525 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 15:36:35.594 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 15:50:47.110 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 17:37:25.234 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 13, 2024 17:37:53.145 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 13, 2024 17:38:03.642 [5196:2444:1213/173803.641:ERROR:CONSOLE(1)] "Unknown VE context: language-mismatch    at new He (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:98934)
+dic 13, 2024 17:38:03.642     at devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:194918
+dic 13, 2024 17:38:03.642     at new ci (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:195314)
+dic 13, 2024 17:38:03.643     at ci.instance (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:195436)
+dic 13, 2024 17:38:03.643     at O.presentUI (devtools://devtools/bundled/devtools-frontend/front_end/panels/emulation/emulation.js:1:58454)
+dic 13, 2024 17:38:03.643     at #I (devtools://devtools/bundled/devtools-frontend/front_end/entrypoints/main/main.js:1:17402)
+dic 13, 2024 17:38:03.643     at #v (devtools://devtools/bundled/devtools-frontend/front_end/entrypoints/main/main.js:1:17197)", source: devtools://devtools/bundled/devtools-frontend/front_end/ui/visual_logging/visual_logging.js (1)
+dic 13, 2024 17:48:42.216 [5196:2444:1213/174842.215:ERROR:CONSOLE(1)] "Unknown VE context: language-mismatch    at new He (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:98934)
+dic 13, 2024 17:48:42.216     at devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:194918
+dic 13, 2024 17:48:42.217     at new ci (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:195314)
+dic 13, 2024 17:48:42.217     at ci.instance (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:195436)
+dic 13, 2024 17:48:42.218     at O.presentUI (devtools://devtools/bundled/devtools-frontend/front_end/panels/emulation/emulation.js:1:58454)
+dic 13, 2024 17:48:42.218     at #I (devtools://devtools/bundled/devtools-frontend/front_end/entrypoints/main/main.js:1:17402)
+dic 13, 2024 17:48:42.219     at #v (devtools://devtools/bundled/devtools-frontend/front_end/entrypoints/main/main.js:1:17197)", source: devtools://devtools/bundled/devtools-frontend/front_end/ui/visual_logging/visual_logging.js (1)
+dic 13, 2024 17:53:38.121 [5196:2444:1213/175338.121:ERROR:CONSOLE(1)] "Unknown VE context: language-mismatch    at new He (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:98934)
+dic 13, 2024 17:53:38.122     at devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:194918
+dic 13, 2024 17:53:38.122     at new ci (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:195314)
+dic 13, 2024 17:53:38.122     at ci.instance (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:195436)
+dic 13, 2024 17:53:38.123     at O.presentUI (devtools://devtools/bundled/devtools-frontend/front_end/panels/emulation/emulation.js:1:58454)
+dic 13, 2024 17:53:38.123     at #I (devtools://devtools/bundled/devtools-frontend/front_end/entrypoints/main/main.js:1:17402)
+dic 13, 2024 17:53:38.123     at #v (devtools://devtools/bundled/devtools-frontend/front_end/entrypoints/main/main.js:1:17197)", source: devtools://devtools/bundled/devtools-frontend/front_end/ui/visual_logging/visual_logging.js (1)
+
+dic 16, 2024 12:04:48.03 NEW SESSION
+dic 16, 2024 12:04:48.03 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 12:06:09.946 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 12:11:17.413 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 12:11:50.166 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 16, 2024 12:17:57.981 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 12:19:00.128 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 12:20:20.755 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 12:20:50.289 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 12:24:19.507 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 12:24:52.319 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 16, 2024 12:30:10.668 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 12:44:28.793 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 12:55:06.146 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 12:55:32.612 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 12:55:43.980 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 16, 2024 13:13:31.756 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 13:14:02.227 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 16, 2024 13:18:11.365 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 13:18:19.891 [8168:2936:1216/131819.888:ERROR:CONSOLE(1)] "Unknown VE context: language-mismatch    at new He (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:98934)
+dic 16, 2024 13:18:19.891     at devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:194918
+dic 16, 2024 13:18:19.892     at new ci (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:195314)
+dic 16, 2024 13:18:19.892     at ci.instance (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:195436)
+dic 16, 2024 13:18:19.892     at O.presentUI (devtools://devtools/bundled/devtools-frontend/front_end/panels/emulation/emulation.js:1:58454)
+dic 16, 2024 13:18:19.892     at #I (devtools://devtools/bundled/devtools-frontend/front_end/entrypoints/main/main.js:1:17402)
+dic 16, 2024 13:18:19.893     at #v (devtools://devtools/bundled/devtools-frontend/front_end/entrypoints/main/main.js:1:17197)", source: devtools://devtools/bundled/devtools-frontend/front_end/ui/visual_logging/visual_logging.js (1)
+dic 16, 2024 13:18:44.174 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 16, 2024 17:08:02.628 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 17:38:53.58 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 17:40:12.226 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 17:58:59.620 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 16, 2024 17:59:27.642 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 16, 2024 18:00:44.409 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+dic 17, 2024 10:07:17.825 NEW SESSION
+dic 17, 2024 10:07:17.825 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 17, 2024 10:07:58.319 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 17, 2024 10:08:31.425 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 17, 2024 10:08:55.263 [5600:1740:1217/100855.263:ERROR:CONSOLE(1)] "Unknown VE context: language-mismatch    at new He (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:98934)
+dic 17, 2024 10:08:55.263     at devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:194918
+dic 17, 2024 10:08:55.264     at new ci (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:195314)
+dic 17, 2024 10:08:55.264     at ci.instance (devtools://devtools/bundled/devtools-frontend/front_end/ui/legacy/legacy.js:1:195436)
+dic 17, 2024 10:08:55.264     at O.presentUI (devtools://devtools/bundled/devtools-frontend/front_end/panels/emulation/emulation.js:1:58454)
+dic 17, 2024 10:08:55.265     at #I (devtools://devtools/bundled/devtools-frontend/front_end/entrypoints/main/main.js:1:17402)
+dic 17, 2024 10:08:55.265     at #v (devtools://devtools/bundled/devtools-frontend/front_end/entrypoints/main/main.js:1:17197)", source: devtools://devtools/bundled/devtools-frontend/front_end/ui/visual_logging/visual_logging.js (1)
+dic 17, 2024 10:12:06.864 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 17, 2024 10:21:45.24 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 17, 2024 11:56:11.773 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 17, 2024 11:56:38.412 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 17, 2024 12:28:18.771 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 17, 2024 12:28:50.694 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 17, 2024 12:38:41.23 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 17, 2024 12:38:55.182 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 17, 2024 13:56:22.775 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 17, 2024 13:56:48.237 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 17, 2024 14:18:46.875 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 17, 2024 14:19:07.378 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 17, 2024 15:05:05.683 [1460:7412:1217/150505.682:ERROR:device_event_log_impl.cc(201)] [15:05:05.683] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
+dic 17, 2024 15:11:54.694 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 17, 2024 15:12:27.101 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 17, 2024 15:19:04.630 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 17, 2024 15:19:30.158 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 17, 2024 15:23:20.851 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 17, 2024 15:23:53.521 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 17, 2024 16:06:13.566 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 17, 2024 16:06:41.849 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 17, 2024 16:28:27.735 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 17, 2024 16:29:00.166 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 17, 2024 16:48:30.789 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 17, 2024 16:48:44.87 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 17, 2024 17:35:30.320 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 17, 2024 17:36:02.490 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 17, 2024 17:46:14.390 [8644:7452:1217/174614.390:ERROR:device_event_log_impl.cc(201)] [17:46:14.391] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: No se ha encontrado el elemento. (0x490)
+
+dic 18, 2024 10:40:29.156 NEW SESSION
+dic 18, 2024 10:40:29.156 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 18, 2024 10:41:53.304 Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#58 is a dynamic-sized tensor).
+dic 18, 2024 12:22:55.530 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 18, 2024 12:25:06.309 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 18, 2024 12:26:15.435 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 18, 2024 12:27:43.78 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 18, 2024 12:35:54.604 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 18, 2024 12:46:03.95 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 18, 2024 12:55:59.656 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 18, 2024 12:56:52.70 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 18, 2024 12:58:15.328 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 18, 2024 12:58:29.731 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 18, 2024 12:59:10.979 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 18, 2024 12:59:39.44 Created TensorFlow Lite XNNPACK delegate for CPU.
+dic 18, 2024 13:00:10.53 Created TensorFlow Lite XNNPACK delegate for CPU.

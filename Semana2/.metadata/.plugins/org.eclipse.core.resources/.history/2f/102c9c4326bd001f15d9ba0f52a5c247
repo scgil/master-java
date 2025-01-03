@@ -1,0 +1,13 @@
+package com.curso;
+
+import jakarta.ws.rs.Path;
+
+@Path("saludo3")
+public class HolaRecurso3 {
+	
+	public String crearJson() {
+		return "(\"nombre\":\"Pepito\",\"edad\": 32,\"departamento\":\"ventas\")";
+	}
+
+
+}

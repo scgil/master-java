@@ -1,0 +1,11 @@
+package repositorio;
+
+import java.util.List;
+
+import com.curso.modelo.Noticia;
+
+public interface INoticiaRepository {
+	public List<Noticia> findAll();
+	public List<Noticia> findByDirectorNombre(String director);
+
+}

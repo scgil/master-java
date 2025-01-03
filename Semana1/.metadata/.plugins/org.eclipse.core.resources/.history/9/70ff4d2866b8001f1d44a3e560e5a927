@@ -1,0 +1,16 @@
+package com.cursojava.funcionalidades.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class CalculadoraTest {
+/*
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+*/
+	
+	
+}

@@ -1,0 +1,12 @@
+package com.curso;
+
+import jakarta.ws.rs.Path;
+
+@Path("saludos2")
+public class HolaRecurso2 {
+
+	public String decirHolaHtml() {
+		return "<html><body><h1>Hola mundo</h1></body></html>";
+	}
+
+}

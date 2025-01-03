@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="formulario">
+<form action="#" method="post" id="formulario">
+  <ul>
+    <li>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nusuario_nombre" />
+    </li>
+    <li>
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="usuario_email" />
+    </li>
+    <li>
+      <label for="mensaje">Mensaje:</label>
+      <input type="text" id="mensaje" name="usuario_texto"/>
+    </li>
+    <li>
+    <button  type="submit" id="enviar">Enviar</button>
+    </li>
+ </ul>
+</form>
+</div>
+
+<div id="respuesta">
+
+</div>
+<script>
+	var nombre = document.getElementById("nombre").value;
+	console.log(nombre);
+	var email = document.getElementById("email").value;
+	var mensaje = document.getElementById("mensaje").value;
+	
+	var respuesta = document.getElementById("respuesta");
+	
+	/*
+	document.getElementById("enviar").addEventListener("click", () => {
+		respuesta.innerHTML = nombre+email+mensaje;
+		console.log(respuesta);
+	});
+	*/
+</script>
+</body>
+</html>

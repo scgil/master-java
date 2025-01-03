@@ -1,0 +1,82 @@
+package com.curso.dao;
+
+import java.util.List;
+
+import com.curso.modelo.Pelicula;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.TypedQuery;
+
+/**
+ * La clase PeliculaDAO sirve para realizar operaciones con la entidad Pelicula
+ * @author Sergio Castro 
+ * @version 1.0 2023/12/23
+ */
+public class PeliculaRepositoryImpl implements IPeliculaRepository {
+	
+	private EntityManager em;
+
+    // Constructor donde se inyecta el EntityManager
+    public PeliculaRepositoryImpl(EntityManager entityManager) {
+        this.em = entityManager;
+    }  
+
+	public List<Pelicula> findAll() {
+		
+		
+		TypedQuery<Pelicula> consulta = em.createNamedQuery("Pelicula.buscarTodas", Pelicula.class);
+		List<Pelicula> peliculas = consulta.getResultList();
+		
+		return peliculas;
+
+	}
+
+	public List<Pelicula> findByDirectorNombre(String director) {
+		
+		TypedQuery<Pelicula> consulta = em.createNamedQuery("Pelicula.buscarPorNombreDirector", Pelicula.class);
+		
+		consulta.setParameter("director", director);
+		
+		List<Pelicula> peliculas = consulta.getResultList();
+		
+		return peliculas;
+
+	}
+
+	public List<Pelicula> findByDirectorLikeNombre(String texto) {
+		
+		TypedQuery<Pelicula> consulta = em.createNamedQuery("Pelicula.buscarPorNombreDirectorLike", Pelicula.class);
+		
+		consulta.setParameter("director", texto);
+		
+		List<Pelicula> peliculas = consulta.getResultList();
+		
+		return peliculas;
+		
+
+	}
+
+	public List<Pelicula> findByDirectorIn() {
+		
+		TypedQuery<Pelicula> consulta = em.createNamedQuery("Pelicula.buscarPorNombreDirectorIn", Pelicula.class);
+		
+		consulta.setParameter("director1", "Pepito");
+		consulta.setParameter("director2", "Juana");
+			
+		List<Pelicula> peliculas = consulta.getResultList();
+		return peliculas;
+	}
+
+	public List<Pelicula> findByPrecio() {
+		
+		TypedQuery<Pelicula> consulta = em.createNamedQuery("Pelicula.buscarPorPrecioEntre", Pelicula.class);
+		
+		consulta.setParameter("precioMin", 2.0);
+		consulta.setParameter("precioMax", 5.50);
+		
+		List<Pelicula> peliculas = consulta.getResultList();
+		
+		return peliculas;
+	}
+
+}

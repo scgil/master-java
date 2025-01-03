@@ -1,0 +1,12 @@
+package com.cursojava.modelo;
+
+public class Arana extends Animal {
+    public Arana() {
+        super(8);
+    }
+
+    @Override
+    public void comer() {
+        System.out.println("Las arañas comen mosquitos.");
+    }
+}

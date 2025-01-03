@@ -1,0 +1,11 @@
+package com.curso.principal;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		EntityManagerFactory emf
+		TypedQuery<Libro> consulta1 = em.createNamedQuery("Libro.buscarTodos");
+
+	}
+
+}

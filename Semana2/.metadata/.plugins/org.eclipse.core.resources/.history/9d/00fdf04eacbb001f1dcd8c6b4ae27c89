@@ -1,0 +1,12 @@
+package com.curso.modelo;
+
+public class PaginaWeb {
+
+	private String url;
+	private String tematica;
+	private String descripcion;
+	public PaginaWeb() {
+		
+	}
+
+}

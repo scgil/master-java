@@ -1,0 +1,31 @@
+package repositorio;
+
+import java.util.List;
+
+import com.curso.modelo.Comentario;
+import com.curso.modelo.Pelicula;
+
+/**
+ * Implementación del repositorio para la entidad {@link Comentario}.
+ * Esta clase proporciona métodos para realizar operaciones CRUD en la base de datos
+ * utilizando JPA.
+ * @author Sergio Castro
+ * @version 1.0 2024/12/23
+ */
+public class IComentarioRespositoryImpl implements IComentarioRespository {
+
+	public List<Comentario> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Comentario> findByAutor(String autor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public List<Comentario> findComentariosByNoticia(String titulo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

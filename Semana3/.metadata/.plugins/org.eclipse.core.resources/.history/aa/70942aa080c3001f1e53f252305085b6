@@ -1,0 +1,73 @@
+package com.curso.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.time.LocalDate;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import com.curso.modelo.Noticia;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
+
+class ComentarioTest {
+
+	EntityManagerFactory emf;
+	EntityManager em;
+	
+	@BeforeEach
+	void setUp() throws Exception {
+		emf = Persistence.createEntityManagerFactory("periodico");
+		em = emf.createEntityManager();
+	}
+
+	@Test
+	public void entityFactoryManagerTest() {
+		assertNotNull(emf);
+	}
+	
+	@Test
+	public void entityManagerTest() {
+		assertNotNull(em);
+	}
+	
+	@Test
+	public void seleccionarComentarioTest() {
+		Noticia noticia = em.find(Noticia.class, 1);
+		assertEquals("Forero 1", noticia.getAutor());
+	}
+	
+	@Test
+	public void insertarComentarioTest() {
+		
+		em.getTransaction().begin();
+		
+		Comentario comentario = new Noticia("Noticia 4", "Es navidad", LocalDate.of(2024, 12, 25));
+		em.persist(noticia);
+		
+		em.getTransaction().commit();
+		
+		Noticia noticiaInsertada = em.find(Noticia.class, "Noticia 4");
+		assertEquals("Noticia 4", noticiaInsertada.getTitulo());
+		
+	}
+	
+	@Test
+	public void borrarNoticiaTest() {
+		Noticia noticia = em.find(Noticia.class, "Noticia 4");
+		
+		em.getTransaction().begin();
+		
+		em.remove(noticia);
+		
+		em.getTransaction().commit();
+		
+		Noticia noticiaBorrada = em.find(Noticia.class, "Noticia 4");
+		assertNull(noticiaBorrada);
+		
+	}
+
+}

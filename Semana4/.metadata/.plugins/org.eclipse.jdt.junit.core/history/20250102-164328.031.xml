@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ReservaControllerTest" project="Proyecto-Reservas" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.curso.controller.ReservaControllerTest" time="10.754" displayname="ReservaControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.curso.controller.ReservaControllerTest]">
+    <testcase name="testAltaReserva" classname="com.curso.controller.ReservaControllerTest" time="3.306" displayname="testAltaReserva()" uniqueid="[engine:junit-jupiter]/[class:com.curso.controller.ReservaControllerTest]/[method:testAltaReserva()]"/>
+    <testcase name="testFindReservasByNombreHotel" classname="com.curso.controller.ReservaControllerTest" time="0.426" displayname="testFindReservasByNombreHotel()" uniqueid="[engine:junit-jupiter]/[class:com.curso.controller.ReservaControllerTest]/[method:testFindReservasByNombreHotel()]"/>
+    <testcase name="testAltaReservaBadRequest" classname="com.curso.controller.ReservaControllerTest" time="0.124" displayname="testAltaReservaBadRequest()" uniqueid="[engine:junit-jupiter]/[class:com.curso.controller.ReservaControllerTest]/[method:testAltaReservaBadRequest()]"/>
+    <testcase name="testFindReservasByNombreHotelNotFound" classname="com.curso.controller.ReservaControllerTest" time="0.131" displayname="testFindReservasByNombreHotelNotFound()" uniqueid="[engine:junit-jupiter]/[class:com.curso.controller.ReservaControllerTest]/[method:testFindReservasByNombreHotelNotFound()]"/>
+  </testsuite>
+</testrun>

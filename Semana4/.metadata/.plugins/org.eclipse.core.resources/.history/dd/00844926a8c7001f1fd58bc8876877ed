@@ -1,0 +1,65 @@
+package com.curso.model;
+
+import com.curso.model.Hotel.Categoria;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+public class HotelDTO {
+	
+	public enum Categoria { UNA_ESTRELLA, DOS_ESTRELLAS, TRES_ESTRELLAS, CUATRO_ESTRELLAS, CINCO_ESTRELLAS }
+	
+	
+	private int idHotel;
+	private String nombre;
+	private Categoria categoria;
+	private double precio;
+	private boolean disponible;
+	
+
+	public int getIdHotel() {
+		return idHotel;
+	}
+
+	public void setIdHotel(int idHotel) {
+		this.idHotel = idHotel;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
+
+	public double getPrecio() {
+		return precio;
+	}
+
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+
+	public boolean isDisponible() {
+		return disponible;
+	}
+
+	public void setDisponible(boolean disponible) {
+		this.disponible = disponible;
+	}
+	
+
+}

@@ -1,0 +1,31 @@
+package com.curso.modelo;
+
+import java.io.Serializable;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+/**
+ * Clase Pelicula representa la entidad Pelicula
+ * @author Sergio Castro 
+ * @version 1.0 2023/12/23
+ */
+@Entity
+@Table(name="peliculas")
+public class Pelicula implements Serializable{
+	private static final long serialVersionUID = 1L;
+	@Id
+	private int codigo;
+	private String titulo;
+	@Column(name="nombre_director")
+	private String nombreDirector;
+	@Column(name = "precio_alquiler")
+	private double precioAlquiler;
+	
+	
+	
+	
+
+}

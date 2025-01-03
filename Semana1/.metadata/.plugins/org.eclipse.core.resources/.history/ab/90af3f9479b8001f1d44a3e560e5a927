@@ -1,0 +1,58 @@
+package com.cursojava.colegio.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import com.cursojava.colegio.Nota;
+
+class NotaTest2 {
+	
+	Nota nota1 = new Nota("lengua", 8);
+	Nota nota2 = new Nota("lengua", 7);
+	Nota nota3 = new Nota("sociales", 7);
+	Nota nota4 = new Nota("lengua", 8);
+	Nota nota5 = new Nota("lengua", 8);
+	@Test
+	void testEsMismaAsignatura() {
+		
+		
+		boolean esMisma = nota1.esMismaAsignatura(nota2);
+		boolean esDistinta = nota1.esMismaAsignatura(nota3);
+		assertTrue(esMisma);
+		assertFalse(esDistinta);
+		
+	}
+	
+	@Test
+	void testIgualdadNotas() {
+		Nota nota1 = new Nota("lengua", 8);
+		Nota nota2 = new Nota("lengua", 8);
+		
+		boolean iguales = nota1.equals(nota2);
+		
+		assertTrue(iguales);
+		
+	}
+	
+	@Test
+	void testNoIgualdadNotas() {
+		Nota nota1 = new Nota("lengua", 8);
+		Nota nota2 = new Nota("sociales", 8);
+		
+		boolean noIguales = nota1.equals(nota2);
+		
+		assertFalse(noIguales);
+		
+	}
+	
+	@Test
+	void notaNoEsComparableConOtraNotaTest() {
+		Nota nota1 = new Nota("lengua", 8);
+		Nota nota2 = new Nota("sociales", 7);
+		
+		assertThrows(RuntimeException.class, ()->nota1.esMayor(nota2));
+		
+	}
+
+}

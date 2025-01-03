@@ -1,0 +1,16 @@
+package com.cursojava.modelo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Camion extends Vehiculo {
+
+	List<Double> tacometro;
+	
+	public Camion(String matricula, String marca, String modelo, String color) {
+		super(matricula, marca, modelo, color);
+		tacometro = new ArrayList<>();
+	}
+	
+
+}

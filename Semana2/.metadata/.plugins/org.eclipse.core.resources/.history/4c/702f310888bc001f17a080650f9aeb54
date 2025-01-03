@@ -1,0 +1,87 @@
+package com.curso.servlet;
+
+import java.io.IOException;
+
+import com.curso.modelo.Producto;
+import com.curso.service.ProductoService;
+
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class InsertarServlet
+ */
+public class InsertarServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private ProductoService servicio = new ProductoService();
+       
+    
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String nombre = request.getParameter("nombre");
+		String categoria = request.getParameter("categoria");
+		String precioStr = request.getParameter("precio");
+		String stockStr = request.getParameter("stock");
+		
+		
+		
+		
+		
+		if((nombre != null && precioStr != null && stockStr != null) && (!nombre.isEmpty() && !precioStr.isEmpty() && !stockStr.isEmpty())) {
+			double precio = Double.parseDouble(precioStr);
+			int stock = Integer.parseInt(stockStr) ;
+			
+			Producto producto = new Producto(nombre, categoria, precio, stock);
+			
+			servicio.insertarProducto(producto);
+			
+			
+			response.setContentType("text/html");
+			PrintWriter out = response.getWriter();
+			
+			out.println("<!DOCTYPE html>");
+	        out.println("<html>");
+	        out.println("<head>");
+	        out.println("<meta charset=\"UTF-8\">");
+	        out.println("<title></title>");
+	        out.println("</head>");
+	        out.println("<body>");
+	        out.println("<p>Se ha registrado el producto correctamente:</p>");
+	        out.println("<p>"++"</p>");
+	        out.println("<p>"++"</p>");
+	        out.println("<p>"++"</p>");
+	        out.println("<p>"++"</p>");
+				}else {
+					persona.insertarCurso(cursoInput);
+					out.println("<h1>"+persona.getNombre()+", estás matriculado en los siguientes cursos: </h1>");
+			        
+			        List<String> cursos = persona.getCursos();
+			        for(String curso: cursos) {
+			        	out.println("<p>"+curso+"</p>");
+			        	
+			        }
+			        out.println("<a href='index.html'>Volver al índice.</a>");
+			        out.println("</body>");
+			        out.println("</html>");
+			        
+			        out.close();
+			 
+			
+			RequestDispatcher dispatcher = request.getRequestDispatcher("index.html");
+			dispatcher.forward(request, response);
+			
+					
+		}else{
+			RequestDispatcher dispatcher = request.getRequestDispatcher("error.html");
+			dispatcher.forward(request, response);
+		}
+		
+		
+	}
+
+}

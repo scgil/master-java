@@ -1,0 +1,28 @@
+package com.curso.principal;
+
+import com.curso.dao.PeliculaRespositoryImpl;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		PeliculaRespositoryImpl pdao = new PeliculaRespositoryImpl();
+		
+		System.out.println("Todas las peliculas: ");
+		pdao.findAll();
+		
+		System.out.println("Peliculas por nombre director: ");
+		pdao.findByDirectorNombre();
+		
+		System.out.println("Peliculas por nombre director Like: ");
+		pdao.findByDirectorLikeNombre();
+		
+		System.out.println("Peliculas por nombre director In: ");
+		pdao.findByDirectorIn();
+		
+		System.out.println("Peliculas por precio:");
+		pdao.findByPrecio();
+
+	}
+
+}

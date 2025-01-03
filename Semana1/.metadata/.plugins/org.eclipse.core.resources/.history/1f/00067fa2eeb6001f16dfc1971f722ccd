@@ -1,0 +1,6 @@
+package com.cursojava.interfaces;
+
+public interface Mascota {
+	
+	;
+}

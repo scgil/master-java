@@ -1,0 +1,10 @@
+package com.curso.crud;
+
+import jakarta.persistence.Persistence;
+
+public class Insercion {
+	public static void main(String[] args) {
+		Persistence.createEntityManagerFactory("biblioteca");// referencia a la unidad de persistencia
+	}
+
+}

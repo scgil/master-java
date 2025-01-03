@@ -1,0 +1,11 @@
+package com.curso.service;
+
+import java.util.List;
+
+import com.curso.model.ReservaRequestDTO;
+import com.curso.model.ReservaResponseDTO;
+
+public interface ReservaService {
+	public void altaReserva(ReservaRequestDTO reservaRequestDTO);
+	public List<ReservaResponseDTO> findReservasByNombreHotel(String nombreHotel);
+}

@@ -1,0 +1,9 @@
+package com.cursojava.modelo;
+
+public class Telefono {
+
+	public Telefono() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

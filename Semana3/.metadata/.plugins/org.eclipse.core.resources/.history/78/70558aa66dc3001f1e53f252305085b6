@@ -1,0 +1,22 @@
+CREATE TABLE `periodico`.`noticias` (
+  `titulo` VARCHAR(45) NOT NULL,
+  `autor` VARCHAR(25) NOT NULL,
+  `fecha` DATE NOT NULL,
+  PRIMARY KEY (`titulo`));
+  
+CREATE TABLE `periodico`.`comentarios` (
+  `id` INT NOT NULL,
+  `texto` VARCHAR(45) NOT NULL,
+  `autor` VARCHAR(25) NOT NULL,
+  `titulo_noticia` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`));
+  
+ALTER TABLE `periodico`.`comentarios` 
+ADD INDEX `noticias_fk0_idx` (`titulo_noticia` ASC) VISIBLE;
+;
+ALTER TABLE `periodico`.`comentarios` 
+ADD CONSTRAINT `noticias_fk0`
+  FOREIGN KEY (`titulo_noticia`)
+  REFERENCES `periodico`.`noticias` (`titulo`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;

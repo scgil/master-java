@@ -1,0 +1,16 @@
+package com.curso.modelo;
+
+import java.util.List;
+
+public class Persona {
+
+	private String nombre;
+	private List<String> curso;
+	public Persona(String nombre) {
+		this.nombre = nombre;
+		this.curso = new ArrayList<>();
+	}
+	
+	
+
+}

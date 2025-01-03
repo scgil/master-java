@@ -1,0 +1,48 @@
+package com.curso.servlet;
+
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+/**
+ * Servlet implementation class EliminarServlet
+ */
+public class EliminarServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String indexElimiar = request.getParameter("option");
+		String urlVista = "/";
+		switch (option) {
+		case "insertar":
+			urlVista = "insertar.jsp";
+			break;
+		case "eliminar":
+			urlVista = "eliminar.jsp";
+			break;
+		case "modificar":
+			urlVista = "modificar.jsp";
+			break;
+		case "listar":
+			urlVista = "ListarServlet";
+			break;
+		case "buscar":
+			urlVista = "buscar.jsp";
+			break;
+		}
+		RequestDispatcher despachador = request.getRequestDispatcher(urlVista);
+		despachador.forward(request, response);
+		
+		//request.getRequestDispatcher(urlVista).forward(request, response);
+	}
+
+
+}

@@ -1,0 +1,77 @@
+package com.cursojava.modelo;
+
+import com.cursojava.interfaces.OperacionesCuenta;
+
+/**
+ * Clase que representa una cuenta bancaria
+ * Permite crear cuentas y gestionarlas
+ * @author Sergio Castro
+ * @version 1.0 2024/12/05
+ */
+
+
+public class Cuenta implements OperacionesCuenta {
+	public enum Estado {
+	    OPERATIVA,
+	    BLOQUEADA,
+	    NUMEROS_ROJOS
+	}
+	
+	private String titular;
+	private double cantidad;
+	
+
+	public Cuenta(String titular) {
+		super();
+		this.titular = titular;
+	}
+
+	
+	public Cuenta(String titular, double cantidad) {
+		super();
+		this.titular = titular;
+		this.cantidad = cantidad;
+	}
+	
+	public String getTitular() {
+		return titular;
+	}
+
+
+	public void setTitular(String titular) {
+		this.titular = titular;
+	}
+
+
+	public double getCantidad() {
+		return cantidad;
+	}
+
+
+	public void setCantidad(double cantidad) {
+		this.cantidad = cantidad;
+	}
+
+
+	@Override
+	public void ingresar(double cantidad) {
+		if(cantidad <= 0) {
+			System.out.println("No se ha realizado ingreso");
+		}else {
+			double saldoFinal = this.cantidad+cantidad;
+			setCantidad(saldoFinal);
+		}
+
+	}
+
+	@Override
+	public void retirar(double cantidad) {
+		double saldoFinal = this.cantidad - cantidad;
+		if(saldoFinal<0) {
+			saldoFinal = 0.0;
+		}
+		setCantidad(saldoFinal);
+
+	}
+
+}

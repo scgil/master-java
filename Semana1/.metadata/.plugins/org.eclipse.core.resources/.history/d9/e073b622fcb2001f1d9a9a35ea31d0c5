@@ -1,0 +1,14 @@
+package com.cursojava.principal;
+
+import com.cursojava.modelo.Cuenta;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Cuenta c1 = new Cuenta("Sergio");
+		double cantidad = c1.getCantidad();
+		System.out.println(cantidad);
+
+	}
+
+}

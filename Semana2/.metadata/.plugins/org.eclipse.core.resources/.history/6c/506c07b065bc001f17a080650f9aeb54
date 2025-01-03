@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="com.curso.modelo.Producto" %>
+<%@ page import="com.curso.service.ProductoService" %>
+<%@ page import="java.util.List" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Resultado de la búsqueda</title>
+</head>
+<body>
+
+<%
+ProductoService productoService = new ProductoService();
+List<Producto> productos = productoService.productos();
+
+%>
+
+<h1>Productos></h1>
+
+<%
+for(Producto producto: productos){
+
+%>
+
+<p> Nombre: <%= producto.getNombre() %> --- <%= producto.getCategoria() %> --- <%= producto.getPrecio() %> --- <%= producto.getStock() %></p><br>
+		
+<%} %>
+
+
+
+
+</body>
+</html>

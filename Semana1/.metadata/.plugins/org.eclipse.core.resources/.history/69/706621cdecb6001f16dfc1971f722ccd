@@ -1,0 +1,14 @@
+package com.cursojava.modelo;
+
+public class Arana extends Animal {
+	private final int NUM_PATATAS = 8;
+	
+	public Arana() {
+
+	}
+
+	public void comer() {
+		System.out.println("Las arañas comen mosquitos");
+	}
+
+}

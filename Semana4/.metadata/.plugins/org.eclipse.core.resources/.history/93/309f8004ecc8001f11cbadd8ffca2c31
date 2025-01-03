@@ -1,0 +1,18 @@
+package com.curso.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.curso.model.Reserva;
+import com.curso.model.Vuelo;
+/**
+ * Repositorio para la entidad {@link Reserva}
+ * Esta interfaz extiende JpaRepository y proporciona métodos para realizar operaciones CRUD en la entidad Vuelo.
+ * @author Sergio Castro
+ * @version 1.0 2024/12/31
+ */
+public interface ReservaRepository extends JpaRepository<Reserva, Integer>{
+	public List<Reserva> findByIdHotel(int idHotel);
+
+}

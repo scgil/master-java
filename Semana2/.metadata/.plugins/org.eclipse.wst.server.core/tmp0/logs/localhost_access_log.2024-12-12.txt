@@ -1,0 +1,13 @@
+127.0.0.1 - - [12/Dec/2024:13:51:35 +0100] "GET / HTTP/1.1" 404 687
+127.0.0.1 - - [12/Dec/2024:13:51:35 +0100] "GET /01-Ejemplitos/plantilla.html HTTP/1.1" 200 145
+127.0.0.1 - - [12/Dec/2024:16:27:23 +0100] "GET / HTTP/1.1" 404 687
+127.0.0.1 - - [12/Dec/2024:16:27:24 +0100] "GET /01-Ejemplitos/plantilla.html HTTP/1.1" 200 145
+127.0.0.1 - - [12/Dec/2024:17:17:14 +0100] "GET /01-Ejemplitos/parimpar.html HTTP/1.1" 200 225
+127.0.0.1 - - [12/Dec/2024:17:17:14 +0100] "GET /01-Ejemplitos/parimpar.js HTTP/1.1" 200 179
+127.0.0.1 - - [12/Dec/2024:17:19:55 +0100] "GET /01-Ejemplitos/parimpar.html HTTP/1.1" 200 463
+127.0.0.1 - - [12/Dec/2024:17:21:50 +0100] "GET / HTTP/1.1" 404 687
+127.0.0.1 - - [12/Dec/2024:17:21:51 +0100] "GET /01-Ejemplitos/parimpar.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [12/Dec/2024:17:25:42 +0100] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [12/Dec/2024:17:25:42 +0100] "GET /favicon.ico HTTP/1.1" 404 698
+0:0:0:0:0:0:0:1 - - [12/Dec/2024:17:26:50 +0100] "GET /01-Ejemplitos/parimpar.html HTTP/1.1" 200 463
+0:0:0:0:0:0:0:1 - - [12/Dec/2024:17:36:36 +0100] "GET /01-Ejemplitos/formulario.html HTTP/1.1" 200 600

@@ -1,0 +1,17 @@
+package com.curso.consultas;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
+
+public class Select06Escalar {
+
+	public static void main(String[] args) {
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("biblioteca");
+		EntityManager em = emf.createEntityManager();
+		
+		em.createQuery("SELECT l.autor FROM Libro l", String.class);
+
+	}
+
+}

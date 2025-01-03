@@ -1,0 +1,23 @@
+package com.curso.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.curso.model.Libro;
+import com.curso.service.CursoService;
+
+@RestController
+public class CursoController {
+	@Autowired
+	private CursoService cursoService;
+	
+	@PostMapping(value="libros", consumes=MediaType.APPLICATION_JSON_VALUE)
+	public void altaCurso(@RequestBody Curso curso) {
+		cursoService.altaCurso(curso);
+	}
+	
+
+}

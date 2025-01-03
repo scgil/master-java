@@ -1,0 +1,61 @@
+package com.curso.principal;
+
+import java.util.List;
+
+import com.curso.modelo.Comentario;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
+import repositorio.ComentarioRespositoryImpl;
+import repositorio.IComentarioRespository;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("periodico");
+		EntityManager em = emf.createEntityManager();
+		IComentarioRespository cr = new ComentarioRespositoryImpl(em);
+		
+		//Mostrar todos los comentarios
+		System.out.println("Todos los comentarios:");
+		List<Comentario> comentarios = cr.findAll();
+		
+		if(comentarios.size()>0) {
+			for(Comentario c: comentarios) {
+				System.out.println(c);
+			}
+		}else {
+			System.out.println("No hay comentarios.");
+		}
+		
+		//Mostrar comentarios por autor
+		System.out.println("Comentarios por autor:");
+		List<Comentario> comentariosAutor = cr.findAll();
+		
+		if(comentariosAutor.size()>0) {
+			for(Comentario c: comentariosAutor) {
+				System.out.println(c);
+			}
+		}else {
+			System.out.println("No hay comentarios por autor.");
+		}
+		
+		//Mostrar comentarios por autor
+		System.out.println("Comentarios por autor:");
+		List<Comentario> comentariosNoticia = cr.findComentariosByNoticia("Noticia 1");
+		
+		if(comentariosAutor.size()>0) {
+			for(Comentario c: comentariosAutor) {
+				System.out.println(c);
+			}
+		}else {
+			System.out.println("No hay comentarios por autor.");
+		}
+		
+
+	}
+
+}

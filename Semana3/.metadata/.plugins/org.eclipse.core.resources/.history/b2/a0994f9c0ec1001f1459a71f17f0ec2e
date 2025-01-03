@@ -1,0 +1,6 @@
+package com.curso.model;
+
+public class Libro implements Serializable{
+	
+
+}

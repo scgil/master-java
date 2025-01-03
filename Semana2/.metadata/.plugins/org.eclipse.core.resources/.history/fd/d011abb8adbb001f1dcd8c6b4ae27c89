@@ -1,0 +1,14 @@
+package com.curso.service;
+
+import java.util.List;
+
+import com.curso.modelo.PaginaWeb;
+
+public class ValidacionService {
+
+	public ValidacionService() {
+		List<PaginaWeb> paginasWeb = List.of(new PaginaWeb("http://www.marca.com", "Deporte", "Noticas de diferentes deportes."),
+				new 
+	}
+
+}

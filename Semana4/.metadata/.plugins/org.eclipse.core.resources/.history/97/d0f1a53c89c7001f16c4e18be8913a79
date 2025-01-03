@@ -1,0 +1,38 @@
+package com.curso.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.curso.model.Vuelo;
+import com.curso.repository.VueloRepository;
+/**
+ * Implementación del servicio para la entidad {@link Vuelo}
+ * Esta clase implementa la interfaz {@link VueloService} y utiliza el repositorio {@link VueloRepository} para realizar las operaciones.
+ * @author Sergio Castro
+ * @version 1.0 2024/12/31
+ */
+public class VueloServiceImpl implements VueloService {
+	@Autowired
+	private VueloRepository vueloRepository;
+	@Override
+	public List<Vuelo> findAllVuelos() {
+		
+		return vueloRepository.findAll();
+	}
+
+	@Override
+	public List<Vuelo> findVuelosDisponibles(int plazas) {
+		
+		return vueloRepository.findByPlazasDisponiblesGreaterThanEqual(plazas);
+	}
+
+	@Override
+	public void actualizarPlazas(int idVuelo, int plazasReserva) {
+		Optional<Vuelo> vueloExistente = vueloRepository.findById(idVuelo);
+		
+
+	}
+
+}

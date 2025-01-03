@@ -1,0 +1,16 @@
+package com.curso.principal;
+
+import com.curso.dao.ProductoDAO;
+import com.curso.modelo.Producto;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		ProductoDAO productoDAO = new ProductoDAO();
+		
+		Producto producto = productoDAO.findBy(1);
+
+	}
+
+}

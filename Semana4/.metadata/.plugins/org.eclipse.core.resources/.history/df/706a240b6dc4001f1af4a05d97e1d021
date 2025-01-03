@@ -1,0 +1,50 @@
+package com.curso.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.curso.model.Curso;
+import com.curso.repository.CursoRepository;
+
+public class CursoServiceImpl implements CursoService {
+	@Autowired
+	private CursoRepository repository;
+	
+
+	public List<Curso> altaCurso(Curso curso) {
+		repository.save(curso);
+		return repository.findAll();
+	}
+
+	@Override
+	public List<Curso> cursos() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Curso> eliminarCurso(int codCurso) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void actualizarCurso(int codCurso, double duracion) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Curso buscarCurso(int codCurso) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Curso> cursosPorPrecio(double precioMin, double precioMax) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

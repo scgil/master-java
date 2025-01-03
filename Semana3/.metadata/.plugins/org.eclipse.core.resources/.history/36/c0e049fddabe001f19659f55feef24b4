@@ -1,0 +1,19 @@
+package com.curso.principal;
+
+import com.curso.dao.ProductoDAO;
+import com.curso.modelo.Producto;
+import com.curso.modelo.Producto.Categoria;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		ProductoDAO productoDAO = new ProductoDAO();
+		
+		Producto productoRecuperado = productoDAO.findBy(1);
+		
+		Producto productoCreado = new Producto("Chaqueta",Categoria.TEXTIL,41.60, 20);
+
+	}
+
+}

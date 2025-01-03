@@ -1,0 +1,38 @@
+package com.curso.servlet;
+
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+import com.curso.service.ProductoService;
+
+/**
+ * Servlet implementation class ListarServlet
+ */
+public class ListarServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private ProductoService servicio;
+       
+    
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String categoria = request.getParameter("categoria");
+		
+		servicio = new ProductoService();
+		
+	
+		
+		request.setAttribute("categoria", servicio.productosPorCategoria(categoria));
+		RequestDispatcher dispatcher = request.getRequestDispatcher("buscarResultado.jsp");
+		dispatcher.forward(request, response);
+	}
+
+	
+
+}

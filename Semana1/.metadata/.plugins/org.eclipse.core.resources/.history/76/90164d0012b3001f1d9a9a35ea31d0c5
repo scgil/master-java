@@ -1,0 +1,10 @@
+package com.cursojava.modelo;
+
+public class Telefono extends Producto {
+
+	public Telefono(int id, String modelo, double precio, int cantidad) {
+		super(id, modelo, precio, cantidad);
+		// TODO Auto-generated constructor stub
+	}
+
+}

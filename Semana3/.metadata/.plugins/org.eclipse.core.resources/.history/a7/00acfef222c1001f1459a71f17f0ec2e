@@ -1,0 +1,3 @@
+1 Crear proyecto Maven
+2 Incorporar dependencias en pom: conector y core hibernate.
+3 Crear carpeta en src/main/resources y dentro el fichero persistence.xml

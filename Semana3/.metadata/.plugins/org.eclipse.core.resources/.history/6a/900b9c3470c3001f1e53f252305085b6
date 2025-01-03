@@ -1,0 +1,12 @@
+package repositorio;
+
+import java.sql.Date;
+import java.util.List;
+
+import com.curso.modelo.Comentario;
+import com.curso.modelo.Noticia;
+
+public interface IComentarioRespository {
+	public List<Comentario> findAll();
+	public List<Comentario> findByAutor(String autor);
+}

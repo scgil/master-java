@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Buscador</title>
+</head>
+<body>
+	<h1>Buscador de páginas web</h1>
+    <form action="ServletCurso" method="post">
+    	<label for="tematica">Curso</label>
+    		<input type="text" name="tematica" required><br>
+		<button  type="submit" id="enviar">Enviar</button>
+    </form>
+</body>
+</html>

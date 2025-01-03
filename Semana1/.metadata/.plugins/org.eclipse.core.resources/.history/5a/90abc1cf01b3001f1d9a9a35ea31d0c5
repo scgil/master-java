@@ -1,0 +1,10 @@
+package com.cursojava.modelo;
+
+public class GuitarraElectrica extends Guitarra {
+
+	public GuitarraElectrica(String nombreInstrumento, Tipo tipo, int numCuerdas) {
+		super(nombreInstrumento, tipo, numCuerdas);
+		// TODO Auto-generated constructor stub
+	}
+
+}

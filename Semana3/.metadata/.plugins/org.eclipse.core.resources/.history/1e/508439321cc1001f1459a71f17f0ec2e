@@ -1,0 +1,9 @@
+package com.curso.consultas;
+
+public class Select05WhereIN {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

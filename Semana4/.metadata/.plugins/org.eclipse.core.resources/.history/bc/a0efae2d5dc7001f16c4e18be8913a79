@@ -1,0 +1,45 @@
+package com.curso.service;
+
+import java.util.List;
+
+import com.curso.model.Hotel;
+
+public class HotelServiceImpl implements HotelService {
+
+	@Override
+	public List<Hotel> getHoteles() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Hotel getHotelById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Hotel getHotelByNombre(String nombre) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Hotel crearHotel(Hotel hotel) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void actualizarHotel(Integer id, Hotel hotel) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void eliminarHotel(Integer id) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

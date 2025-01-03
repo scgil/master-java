@@ -1,0 +1,8 @@
+package com.curso.crud;
+
+public class Insercion {
+	public static void main(String[] args) {
+		
+	}
+
+}

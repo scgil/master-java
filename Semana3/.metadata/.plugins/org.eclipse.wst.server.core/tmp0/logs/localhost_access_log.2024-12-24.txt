@@ -1,0 +1,4 @@
+127.0.0.1 - - [24/Dec/2024:18:02:49 +0100] "GET / HTTP/1.1" 404 687
+0:0:0:0:0:0:0:1 - - [24/Dec/2024:18:02:50 +0100] "GET /Almacen/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [24/Dec/2024:18:02:50 +0100] "GET /favicon.ico HTTP/1.1" 404 698
+0:0:0:0:0:0:0:1 - - [24/Dec/2024:18:03:23 +0100] "GET /Almacen/FrontControlador?option=listar HTTP/1.1" 200 700

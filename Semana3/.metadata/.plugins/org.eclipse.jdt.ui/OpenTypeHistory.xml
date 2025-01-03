@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=03-VideoclubJPA/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.curso.dao{IPelicula.java[IPelicula" modifiers="513" timestamp="1734955385589"/>
+    <typeInfo handle="=03-VideoclubJPA/C:\/Users\/Admin\/.m2\/repository\/org\/hibernate\/orm\/hibernate-core\/6.3.1.Final\/hibernate-core-6.3.1.Final.jar=/maven.pomderived=/true=/=/maven.groupId=/org.hibernate.orm=/=/maven.artifactId=/hibernate-core=/=/maven.version=/6.3.1.Final=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.hibernate.boot.model.source.internal.hbm(IndexedPluralAttributeSource.class[IndexedPluralAttributeSource" modifiers="1537" timestamp="1734944125082"/>
+    <typeInfo handle="=JPATest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;repositorio{INoticiaRepository.java[INoticiaRepository" modifiers="513" timestamp="1735215755521"/>
+    <typeInfo handle="=JPATest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.curso.modelo{Noticia.java[Noticia" modifiers="1" timestamp="1735215539737"/>
+    <typeInfo handle="=JPATest/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.curso.modelo{Comentario.java[Comentario" modifiers="1" timestamp="1735215565982"/>
+</typeInfoHistroy>

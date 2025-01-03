@@ -1,0 +1,14 @@
+package repositorio;
+
+import java.sql.Date;
+import java.util.List;
+
+import com.curso.modelo.Noticia;
+
+public interface INoticiaRepository {
+	public List<Noticia> findAll();
+	public List<Noticia> findByAutor(String autor);
+	public List<Noticia> findByFecha(Date fecha);
+	public List<Comentarios> findComentariosByNoticia(String titulo);
+
+}

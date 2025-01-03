@@ -1,0 +1,11 @@
+package com.cursojava.funcionalidades;
+
+public class ConversorEuroPesetaVice {
+
+	public double convertirEuroPeseta(double euros) {
+		
+		return 0;
+	}
+	
+
+}

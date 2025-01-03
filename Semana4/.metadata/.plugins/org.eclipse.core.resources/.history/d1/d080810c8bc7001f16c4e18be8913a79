@@ -1,0 +1,24 @@
+package com.curso.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.curso.model.Vuelo;
+import com.curso.service.VueloService;
+/** 
+ * Controlador REST para el recurso de la entidad {@link Vuelo}. 
+ * Este controlador proporciona endpoints para acceder a los datos de los vuelos. Emplea el servicio {@link VueloService}
+ * @author Sergio Castro
+ * @version 1.0 2024/12/31
+ */
+@RestController
+@RequestMapping("api/vuelos")
+public class VueloController {
+	@Autowired
+	private VueloService vueloService;
+	
+	
+	
+
+}

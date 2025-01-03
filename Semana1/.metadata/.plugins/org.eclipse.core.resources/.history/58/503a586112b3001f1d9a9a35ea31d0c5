@@ -1,0 +1,18 @@
+package com.cursojava.modelo;
+
+public class Ordenador extends Producto {
+	
+	String procesador;
+	int memoria;
+	int disco;
+
+	public Ordenador(int id, String modelo, double precio, int cantidad, String procesador, int memoria, int disco) {
+		super(id, modelo, precio, cantidad);
+		this.procesador = procesador;
+		this.memoria = memoria;
+		this.disco = disco;
+	
+	}
+	
+
+}

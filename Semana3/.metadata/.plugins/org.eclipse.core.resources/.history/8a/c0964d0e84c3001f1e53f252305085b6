@@ -1,0 +1,14 @@
+package repositorio;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import com.curso.modelo.Noticia;
+
+public interface INoticiaRepository {
+	public List<Noticia> findAll();
+	public List<Noticia> findByAutor(String autor);
+	public List<Noticia> findByFecha(LocalDate fecha);
+	
+
+}

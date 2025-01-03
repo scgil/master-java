@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+    <form action="servletFromulario2" method="post">
+        Nombre: <input type="text" name="nombre"><br>
+		<button  type="submit" id="enviar">Enviar</button>
+    </form>
+
+</body>
+</html>

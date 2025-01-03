@@ -1,0 +1,12 @@
+package com.curso.modelo;
+
+/**
+ * Clase Pelicula representa la entidad Pelicula
+ * @author Sergio Castro 
+ * @version 1.0 2023/12/23
+ */
+public class Pelicula {
+	
+	
+
+}

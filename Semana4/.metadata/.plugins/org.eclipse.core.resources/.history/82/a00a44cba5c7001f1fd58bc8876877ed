@@ -1,0 +1,50 @@
+package com.curso.model;
+
+class ReservaRequestDTO {
+    private Long idVuelo;
+    private Long idHotel;
+    private String nombreCliente;
+    private String dni;
+    private int totalPersonas;
+
+    // Getters y Setters
+    public Long getIdVuelo() {
+        return idVuelo;
+    }
+
+    public void setIdVuelo(Long idVuelo) {
+        this.idVuelo = idVuelo;
+    }
+
+    public Long getIdHotel() {
+        return idHotel;
+    }
+
+    public void setIdHotel(Long idHotel) {
+        this.idHotel = idHotel;
+    }
+
+    public String getNombreCliente() {
+        return nombreCliente;
+    }
+
+    public void setNombreCliente(String nombreCliente) {
+        this.nombreCliente = nombreCliente;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public int getTotalPersonas() {
+        return totalPersonas;
+    }
+
+    public void setTotalPersonas(int totalPersonas) {
+        this.totalPersonas = totalPersonas;
+    }
+}

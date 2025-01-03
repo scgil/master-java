@@ -1,0 +1,19 @@
+package com.curso.model;
+
+import java.io.Serializable;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="noticias")
+public class Noticia implements Serializable{
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	private String titulo;
+	private String autor;
+	private LocalDate fecha;
+
+}

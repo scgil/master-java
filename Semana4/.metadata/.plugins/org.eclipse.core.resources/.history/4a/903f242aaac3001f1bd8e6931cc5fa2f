@@ -1,0 +1,9 @@
+package com.curso.model;
+
+public class Curso {
+	private int codCurso;
+	String nombre;
+	int duracion;
+	double precio;
+
+}

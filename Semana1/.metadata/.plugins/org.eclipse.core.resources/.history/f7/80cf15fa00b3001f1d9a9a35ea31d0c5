@@ -1,0 +1,11 @@
+package com.cursojava.modelo;
+
+public class Tambor {
+	
+	int tamano;
+	
+	public Tambor(in) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

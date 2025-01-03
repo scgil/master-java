@@ -1,0 +1,16 @@
+package com.curso;
+
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+
+@Path("saludos") //especificando ruta de acceso
+public class HolaRecurso1 {
+// http://localhost:8080/EjemploRest/rest/saludos	
+	
+	@GET
+	public String decirHola() {
+		return "Hola mundo";
+	}
+
+
+}

@@ -1,0 +1,23 @@
+INDEX VERSION 1.131
+C:\Users\Admin\eclipse-workspace\Semana2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1786934137.index
+\19-EjemploEL\src\main\java
+C:\Users\Admin\eclipse-workspace\Semana2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3880997081.index
+\21-JSTLyMaven\src\main\java
+C:\Users\Admin\eclipse-workspace\Semana2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3804052394.index
+\14-ParametrosJSP\src\main\java
+C:\Users\Admin\eclipse-workspace\Semana2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\907429289.index
+\13-EjemplosJSP\src\main\java
+C:\Users\Admin\eclipse-workspace\Semana2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4009851786.index
+\20-JSTLylib\src\main\java
+C:\Users\Admin\eclipse-workspace\Semana2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3048891595.index
+\01-BuscadorTematica\src\main\java
+C:\Users\Admin\eclipse-workspace\Semana2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2189599638.index
+\Almacen\src\main\java
+C:\Users\Admin\eclipse-workspace\Semana2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\809416348.index
+\15-JSPyClases\src\main\java
+C:\Users\Admin\eclipse-workspace\Semana2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1468063614.index
+\15JPSyClases\src\main\java
+C:\Users\Admin\eclipse-workspace\Semana2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1829876075.index
+\Almacen\src\main\java
+C:\Users\Admin\eclipse-workspace\Semana2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2511261709.index
+\FrontController\src\main\java

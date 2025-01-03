@@ -1,0 +1,7 @@
+package com.curso.repository;
+
+import com.curso.model.Vuelo;
+
+public interface VueloRepository extends JpaRespository<Vuelo, Integer>{
+
+}

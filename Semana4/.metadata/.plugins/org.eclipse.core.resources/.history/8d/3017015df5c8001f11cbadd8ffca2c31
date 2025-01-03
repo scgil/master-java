@@ -1,0 +1,47 @@
+package com.curso;
+
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+import java.util.List;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.curso.model.ReservaRequestDTO;
+import com.curso.model.ReservaResponseDTO;
+import com.curso.service.ReservaService;
+
+@SpringBootTest
+class ApplicationTests {
+
+	@Autowired
+	private ReservaService reservaService;
+	
+	private ReservaRequestDTO reservaRequestDTO;
+	private String nombreHotel;
+	
+	@BeforeEach
+	void setUp() {
+		
+		reservaRequestDTO = new ReservaRequestDTO();
+		nombreHotel = "Hotel Ejemplo";
+	}
+	
+	@Test
+	void contextLoads() {
+		assertNotNull(reservaService);
+	}
+	@Test
+	void testAltaReserva() { assertDoesNotThrow(() -> reservaService.altaReserva(reservaRequestDTO));
+	}
+	@Test
+	void testFindReservasByNombreHotel() {
+		List<ReservaResponseDTO> reservas = reservaService.findReservasByNombreHotel(nombreHotel);
+		assertNotNull(reservas); assertFalse(reservas.isEmpty());
+	}
+
+}

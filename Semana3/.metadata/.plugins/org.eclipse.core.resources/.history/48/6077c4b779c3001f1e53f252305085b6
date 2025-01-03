@@ -1,0 +1,45 @@
+package repositorio;
+
+import java.util.List;
+
+import com.curso.modelo.Comentario;
+import com.curso.modelo.Pelicula;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.TypedQuery;
+
+/**
+ * Implementación del repositorio para la entidad {@link Comentario}.
+ * Esta clase proporciona métodos para realizar operaciones CRUD en la base de datos
+ * utilizando JPA.
+ * @author Sergio Castro
+ * @version 1.0 2024/12/26
+ */
+public class ComentarioRespositoryImpl implements IComentarioRespository {
+	
+	private EntityManager em;
+	
+	public ComentarioRespositoryImpl(EntityManager entityManager) {
+		this.em = entityManager;
+		
+	}
+	
+	public List<Comentario> findAll() {
+		TypedQuery<Comentario> consulta = em.createNamedQuery("Pelicula.buscarTodas", Comentario.class);
+		List<Comentario> comentarios = consulta.getResultList();
+		return comentarios;
+	}
+
+	public List<Comentario> findByAutor(String autor) {
+		TypedQuery<Comentario> consulta = em.createNamedQuery("Pelicula.buscarPorNombreDirector", Pelicula.class);
+		consulta.setParameter("director", director);	
+		List<Comentario> peliculas = consulta.getResultList();
+		
+		return peliculas;
+	}
+	public List<Comentario> findComentariosByNoticia(String titulo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

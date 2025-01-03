@@ -1,0 +1,25 @@
+package repositorio;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import com.curso.modelo.Noticia;
+
+public class INoticiaRespositoryImpl implements INoticiaRepository {
+
+	public List<Noticia> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Noticia> findByAutor(String autor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Noticia> findByFecha(LocalDate fecha) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

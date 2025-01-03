@@ -1,0 +1,11 @@
+package com.cursojava.modelo;
+
+public class Mascota extends Animal {
+	String nombre;
+	public Mascota(String nombre) {
+		this.nombre = nombre;
+		
+	}
+	
+
+}

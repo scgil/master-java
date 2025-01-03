@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="com.curso.modelo.PaginaWeb" %>
+<%@ page import="com.curso.service.PaginaWebService" %>
+<%@ page import="java.util.List" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Resultado de la búsqueda</title>
+</head>
+<body>
+
+<%
+PaginaWebService pgws = new PaginaWebService();
+List<PaginaWeb> websPorTematica = (List<PaginaWeb>) request.getAttribute("tematica");
+List<String> tematicas = pgws.tematicas();
+
+for(int i=0; i<tematicas.size(); i++){
+	String tema=tematicas.get(i);
+%>
+
+<h1>Tematica: <%=tema%></h1>
+<%
+	for(int j=0;j<websPorTematica.size(); i++){
+		if(tema.equals(websPorTematica.get(j).getTematica())){
+%>
+<a href='<%= websPorTematica.get(j).getUrl() %>'>Enlace.</a>			
+		}
+	}
+}
+for (PaginaWeb  pagina : websPorTematica){
+%>
+<p>Nombre del curso:<%=curso.getNombre() %>--- Nivel del curso:<%=curso.getNivel() %>
+<% }%>
+
+</body>
+</html>

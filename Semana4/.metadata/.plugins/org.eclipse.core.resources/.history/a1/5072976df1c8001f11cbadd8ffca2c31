@@ -1,0 +1,27 @@
+package com.curso;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.curso.model.ReservaRequestDTO;
+import com.curso.service.ReservaService;
+
+@SpringBootTest
+class ApplicationTests {
+
+	@Autowired
+	private ReservaService reservaService;
+	
+	private ReservaRequestDTO reservaRequestDTO;
+	private String nombreHotel;
+	
+	@BeforeEach void setUp() {
+		
+		reservaRequestDTO = new ReservaRequestDTO();
+		nombreHotel = "Hotel Ejemplo";
+		}
+	}
+	
+
+}

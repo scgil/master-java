@@ -1,0 +1,8 @@
+package com.curso.model;
+
+public class FormacionDTO {
+	private String curso;
+	private int asignaturas;
+	private double precio;
+
+}

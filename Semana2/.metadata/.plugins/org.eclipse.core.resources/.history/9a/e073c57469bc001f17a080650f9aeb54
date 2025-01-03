@@ -1,0 +1,36 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="com.curso.modelo.Producto" %>
+<%@ page import="com.curso.service.ProductoService" %>
+<%@ page import="java.util.List" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Resultado de la busqueda</title>
+</head>
+<body>
+<h1>Resultado de la busqueda</h1>
+<%
+PaginaWebService pgws = new PaginaWebService();
+List<Producto> productosCategoria = (List<Producto>) request.getAttribute("categoria");
+String tematica = websTematica.get(0).getTematica();
+%>
+
+<h1>Tematica: <%=tematica%></h1>
+
+<%
+for(int i=0; i<websTematica.size(); i++){
+
+%>
+
+<a href='<%= websTematica.get(i).getUrl() %>'>Enlace.</a><br>
+<p> Descripción: <%= websTematica.get(i).getDescripcion() %> </p>
+		
+<%} %>
+
+
+
+
+</body>
+</html>

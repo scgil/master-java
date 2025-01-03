@@ -1,0 +1,80 @@
+package com.cursojava.modelo;
+
+import java.time.Duration;
+
+import java.time.LocalTime;
+
+
+
+public abstract class Vehiculo {
+    private final String matricula;
+    private String marca;
+    private String modelo;
+    private String color;
+    private int espacioRecorrido;
+    private LocalTime tiempoInicio;
+    private LocalTime tiempoActual;
+
+    public Vehiculo(String matricula, String marca, String modelo, String color) {
+        this.matricula = matricula;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.color = color;
+        this.espacioRecorrido = 0;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+    
+    public String getMarca() {
+    	return marca;
+    }
+    public String getModelo() {
+    	return modelo;
+    }
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int getEspacioRecorrido() {
+        return espacioRecorrido;
+    }
+
+    public void incrementarEspacioRecorrido(int metros) {
+        this.espacioRecorrido += metros;
+    }
+
+    public void iniciarViaje() {
+        this.tiempoInicio = LocalTime.now();
+        this.tiempoActual = tiempoInicio;
+    }
+
+    public void actualizarTiempoActual() {
+    	this.tiempoActual = LocalTime.now();
+        
+    }
+
+    public Duration getTiempoDeViaje() {
+        if (tiempoInicio != null && tiempoActual != null) {
+            return Duration.between(tiempoInicio, tiempoActual);
+        } else {
+            return Duration.ZERO;
+        }
+    }
+
+    public double getVelocidad() {
+        Duration duracion = getTiempoDeViaje();
+        if (!duracion.isZero()) {
+            return (double) espacioRecorrido / duracion.getSeconds();
+        } else {
+            return 0;
+        }
+    }
+
+  
+}

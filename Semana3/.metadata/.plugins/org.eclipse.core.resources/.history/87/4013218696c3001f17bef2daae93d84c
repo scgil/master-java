@@ -1,0 +1,47 @@
+package com.curso.principal;
+
+import java.util.List;
+
+import com.curso.modelo.Comentario;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
+import repositorio.INoticiaRepository;
+import repositorio.NoticiaRepositoryImpl;
+
+public class Principal2 {
+
+	public static void main(String[] args) {
+		
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("periodico");
+		EntityManager em = emf.createEntityManager();
+		
+		INoticiaRepository nr = new NoticiaRepositoryImpl(em);
+		//Mostrar todas las noticias
+		System.out.println("Todas las noticias:");
+		List<Comentario> noticias = cr.findAll();
+		
+		if(comentarios.size()>0) {
+			for(Comentario c: comentarios) {
+				System.out.println(c);
+			}
+		}else {
+			System.out.println("No hay comentarios.");
+		}
+		
+		//Mostrar comentarios por autor
+		System.out.println("Comentarios por autor:");
+		List<Comentario> comentariosAutor = cr.findAll();
+		
+		if(comentariosAutor.size()>0) {
+			for(Comentario c: comentariosAutor) {
+				System.out.println(c);
+			}
+		}else {
+			System.out.println("No hay comentarios por autor.");
+		}
+
+	}
+
+}

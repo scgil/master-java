@@ -1,0 +1,23 @@
+package com.curso.service;
+
+import java.util.List;
+
+import com.curso.model.Empleado;
+import com.curso.model.Hotel;
+
+public interface HotelService {
+	public List<Hotel> getHoteles();
+	public Hotel getHotelById(Integer id);
+	public Hotel getHotelByNombre(String nombre);
+	public void crearHotel(Hotel hotel);
+	public void actualizarHotel(Integer id, Hotel hotel);
+	public void eliminarEmpleado(Integer id);
+	
+	
+	List<Hotel> getAllEmpleados();
+	Hotel getEmpleadoById(Integer id);
+	Hotel crearEmpleado(Empleado empleado);
+	Hotel actualizarEmpleado(Integer Id, Empleado empleado);
+	void eliminarEmpleado(Integer id);
+
+}

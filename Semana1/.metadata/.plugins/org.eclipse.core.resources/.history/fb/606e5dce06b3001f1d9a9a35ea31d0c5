@@ -1,0 +1,14 @@
+package com.cursojava.modelo;
+
+public abstract class Guitarra extends Instrumento {
+	
+	private int numCuerdas;
+	
+	public Guitarra(String nombreInstrumento, Tipo tipo, int numCuerdas) {
+		super(nombreInstrumento, tipo);
+		this.numCuerdas = numCuerdas;
+	}
+	
+	
+
+}

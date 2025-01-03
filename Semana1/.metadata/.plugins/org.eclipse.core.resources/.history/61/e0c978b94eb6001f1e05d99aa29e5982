@@ -1,0 +1,42 @@
+package com.cursojava.modelo;
+
+import com.cursojava.interfaz.Conducible;
+
+public class Coche extends Vehiculo implements Conducible{
+	
+	private static final int NUM_RUEDAS = 4;
+
+	public Coche(String matricula, String marca, String modelo, String color) {
+		super(matricula, marca, modelo, color);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public int getNumeroRuedas() {
+        return NUM_RUEDAS;
+    }
+	
+	@Override
+    public void arrancar() {
+        System.out.println("El coche está en marcha.");
+        iniciarViaje();
+    }
+
+    @Override
+    public void avanzar(int metros) {
+        incrementarEspacioRecorrido(metros);
+        actualizarTiempoActual();
+        System.out.println("El coche avanza " + metros + " metros.");
+        System.out.println("Tiempo actual de viaje: " + getTiempoDeViaje().getSeconds() + " segundos.");
+    }
+
+    
+
+    @Override
+    public void parar() {
+        actualizarTiempoActual();
+        System.out.println("El coche se ha detenido.");
+        System.out.println("Tiempo final de viaje: " + getTiempoDeViaje().getSeconds() + " segundos.");
+    }
+    
+
+}

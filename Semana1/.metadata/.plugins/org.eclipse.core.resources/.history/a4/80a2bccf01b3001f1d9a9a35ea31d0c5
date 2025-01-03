@@ -1,0 +1,10 @@
+package com.cursojava.modelo;
+
+public class Tambor extends Instrumento {
+
+	public Tambor(String nombreInstrumento, Tipo tipo) {
+		super(nombreInstrumento, tipo);
+		// TODO Auto-generated constructor stub
+	}
+
+}

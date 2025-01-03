@@ -1,0 +1,27 @@
+package com.curso.dao;
+
+import java.util.List;
+
+import com.curso.modelo.Producto;
+
+/**
+ * La interfaz IProducto ofrece operaciones sobre Producto.
+ * Ofrece operacione para guardar, actualizar, eliminar, encontrar por id y listar todos los productos.
+ * @author Sergio Castro
+ * @version 1.0 2024/12/19
+ */
+
+public interface IProducto {
+	void save(Producto producto);
+
+	void update(Producto producto);
+
+	void remove(Producto producto);
+
+	Producto findBy(int id);
+
+	List<Producto> findAll();
+
+
+
+}

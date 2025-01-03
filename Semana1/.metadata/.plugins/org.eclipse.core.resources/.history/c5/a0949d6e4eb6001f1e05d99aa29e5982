@@ -1,0 +1,23 @@
+package com.cursojava.principal;
+
+import com.cursojava.modelo.Coche;
+
+public class Main {
+
+	public static void main(String[] args) throws InterruptedException {
+	
+		Coche miCoche = new Coche("1234ABC", "Opel", "Corsa", "Rojo");
+        miCoche.arrancar();
+        Thread.sleep(2000);
+        miCoche.avanzar(5);
+        Thread.sleep(2000);
+        miCoche.retroceder(2);
+        miCoche.parar();
+        System.out.println("Matrícula del coche: " + miCoche.getMatricula());
+        System.out.println("Espacio recorrido: " + miCoche.getEspacioRecorrido() + " metros");
+        System.out.println("Tiempo de viaje: " + miCoche.getTiempoDeViaje().getSeconds() + " segundos");
+        System.out.println("Velocidad: " + miCoche.getVelocidad() + " metros/segundo");
+       
+    }
+
+}

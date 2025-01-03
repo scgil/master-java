@@ -1,0 +1,16 @@
+package com.cursojava.modelo;
+
+public class Tambor extends Instrumento {
+	
+	String tamano;
+
+	public Tambor(String nombreInstrumento, Tipo tipo, String tamano) {
+		super(nombreInstrumento, tipo);
+		this.tamano = tamano;
+	}
+	
+	public void aporrear() {
+		System.out.println("Aporreando tambor "+super.nombreInstrumento);
+		
+	}
+}

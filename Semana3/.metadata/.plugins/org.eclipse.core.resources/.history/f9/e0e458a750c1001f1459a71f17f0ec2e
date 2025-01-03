@@ -1,0 +1,57 @@
+package com.curso.principal;
+
+import java.util.List;
+
+import com.curso.dao.PeliculaRespositoryImpl;
+import com.curso.model.Libro;
+import com.curso.repository.ILibroRepository;
+import com.curso.repository.LibroRepositoryImpl;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.EntityTransaction;
+import jakarta.persistence.Persistence;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		// Crear el EntityManagerFactory (esto carga la configuración de persistence.xml)
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("videoclub");
+
+        // Crear un EntityManager (esto es necesario para las operaciones de persistencia)
+        EntityManager em = emf.createEntityManager();
+
+        // Crear el repositorio, inyectando el EntityManager
+        ILibroRepository libroRepository = new LibroRepositoryImpl(entityManager);
+        
+
+        
+        
+		
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("videoclub");
+		EntityManager em = emf.createEntityManager();
+		
+		PeliculaRespositoryImpl pdao = new PeliculaRespositoryImpl();
+		
+		System.out.println("Todas las peliculas: ");
+		pdao.findAll();
+		
+		System.out.println("Peliculas por nombre director: ");
+		pdao.findByDirectorNombre();
+		
+		System.out.println("Peliculas por nombre director Like: ");
+		pdao.findByDirectorLikeNombre();
+		
+		System.out.println("Peliculas por nombre director In: ");
+		pdao.findByDirectorIn();
+		
+		System.out.println("Peliculas por precio:");
+		pdao.findByPrecio();
+		
+		em.close();
+        emf.close();
+
+	}
+
+}

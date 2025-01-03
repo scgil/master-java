@@ -1,0 +1,24 @@
+package com.cursojava.modelo;
+
+/**
+ * Clase que representa un Electrodomestico
+ * Crea objetos de tipo Electrodomestico
+ * @author Sergio Castro
+ * @version 1.0 2024/12/11
+ */
+public abstract class Electrodomestico {
+	
+	protected final double PRECIO_BASE = 100.00;
+	protected final Consumo CONSUMO_ENERGETICO = Consumo.F;
+	public enum Consumo{
+		A,B,C,D,E,F
+	}
+	public enum Color{
+		BLANCO, NEGRO, ROJO, AZUL, GRIS
+	}
+	protected double precio;
+	protected String color;
+	int peso;
+	
+
+}

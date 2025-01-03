@@ -1,0 +1,11 @@
+package com.curso.model;
+
+import java.io.Serializable;
+
+@Entity
+@Table(name=noticias)
+public class Noticia implements Serializable{
+	private static final long serialVersionUID = 1L;
+	
+
+}

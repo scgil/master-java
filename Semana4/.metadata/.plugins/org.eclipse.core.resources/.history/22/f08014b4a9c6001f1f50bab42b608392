@@ -1,0 +1,24 @@
+package com.curso.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.curso.model.FormacionDTO;
+
+@Service
+public class FormacionServiceImpl implements FormacionService {
+
+	@Override
+	public List<FormacionDTO> cursos() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void altaCurso(FormacionDTO formacionDTO) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

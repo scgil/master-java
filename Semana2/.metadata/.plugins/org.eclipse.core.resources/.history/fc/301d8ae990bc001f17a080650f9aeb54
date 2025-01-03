@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="com.curso.modelo.Producto" %>
+<%@ page import="com.curso.service.ProductoService" %>
+<%@ page import="java.util.List" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Producto a modificar</title>
+</head>
+<body>
+
+<%
+ProductoService ps = new ProductoService();
+List<Producto> productos = ps.productos();
+List<String> listaCategorias = ps.categorias();
+
+int indice = (int)request.getAttribute("indiceModificar");
+
+%>
+
+<h1>Introduce valores</h1>
+
+<%
+for(Producto producto: productos){
+
+%>
+
+<p> Nombre: <%= producto.getNombre() %> --- Categoria: <%= producto.getCategoria() %> --- Precio: <%= producto.getPrecio() %> --- Stock: <%= producto.getStock() %></p><br>
+		
+<%} %>
+
+<a href='index.html'>Volver al índice.</a>
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+</head>
+<body>
+	<h1>Login</h1>
+    <form action="ServletPersona" method="post">
+    	<label for="usuario">Nombre</label>
+    		<input type="text" name="usuario"><br>
+    	<label for="password">Nombre</label>
+    		<input type="text" name="password"><br>
+		<button  type="submit" id="enviar">Buscar</button>
+		<p>(admin, admin)</p>
+    </form>
+</body>
+</html>

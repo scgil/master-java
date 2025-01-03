@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Búsqueda</title>
+</head>
+<body>
+	<h1>La matriculación requiere el nombre del alumno</h1>
+    <form action="Servlet" method="post">
+    	<label for="buscador">Buscador</label>
+    		<input type="text" name="textoBusqueda"><br>
+		<button  type="submit" id="enviar">Enviar</button>
+    </form>
+</body>
+</html>

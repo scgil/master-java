@@ -1,0 +1,13 @@
+package com.curso.modelo;
+
+public class Producto {
+	public enum Categoria{
+		ELECTRODOMESTICOS, TEXTIL
+	}
+	private int id;
+	private String nombre;
+	private enum categoria;
+	private double precio;
+	private int stock;
+
+}

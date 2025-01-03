@@ -1,0 +1,7 @@
+package com.cursojava.colegio;
+
+public class Notas {
+	private String asignatura;
+	private double valor;
+
+}

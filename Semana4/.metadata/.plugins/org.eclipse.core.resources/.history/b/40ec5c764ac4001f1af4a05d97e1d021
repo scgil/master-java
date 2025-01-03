@@ -1,0 +1,19 @@
+Establecer el recurso= Libro
+
+Vamos a exponer un CRUD de un Libro que interactue con una bd
+
+GET -->Recuperar todos los libros (http://localhost:8080/libros)
+GET -->Recuperar un libro (http://localhost:8080/libros/{isbn})
+POST-->Insertar un libro (http://localhost:8080/libros)
+PUT -->Actualizar un libro (http://localhost:8080/libros/{isbn})
+DELETE -->Eliminar un libro (http://localhost:8080/libros/{isbn})
+
+1. Crear Proyecto (insertar los starter necesarios) (Spring Web, Spring Data JPA, driver MySql)
+2. Trabajar con el modelo (com.curso.model) y poner las anotaciones @Entity @Table @Id, @GeneratedValue
+3. Trabajar con la capa repository
+	Crear interfaz LibroRepository 
+3. Lógica de la capa de negocio-->capa de servicio(com.curso.service)
+	3.1. Crear una interfaz desacoplada
+	3.2 Crear clase que implemente la interfaz (no olvidar el @service)
+4. Crear el controlador (com.curso.controller) (@RestController, @AutoWired y hacer los mapeos de los endpoints)
+5. Configuraciones: Ir a la clase lanzadera (Application). Al no tener BD, no hay que ir a aplication.properties

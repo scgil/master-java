@@ -1,0 +1,13 @@
+package com.curso.service;
+
+import java.util.List;
+
+
+public interface CursoService {
+	List<Curso> libros();
+	Curso buscarLibro(int isbn);
+	void altaLibro(Libro libro);
+	void actualizar(Libro libro);
+	List<Libro> eliminarLibro(int codCUrso);
+
+}

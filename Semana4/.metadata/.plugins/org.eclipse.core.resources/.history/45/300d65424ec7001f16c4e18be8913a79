@@ -1,0 +1,11 @@
+package com.curso.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="hoteles")
+public class Hotel {
+	private int idHotel;
+
+}

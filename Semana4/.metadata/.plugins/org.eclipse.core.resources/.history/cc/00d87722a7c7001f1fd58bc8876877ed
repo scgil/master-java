@@ -1,0 +1,34 @@
+package com.curso.model;
+
+import java.time.LocalDate;
+
+
+class ReservaResponseDTO {
+    private String nombreCliente;
+    private String dni;
+    private Long idVuelo;
+
+    public ReservaResponseDTO(String nombreCliente, String dni, Long idVuelo) {
+        this.nombreCliente = nombreCliente;
+        this.dni = dni;
+        this.idVuelo = idVuelo;
+    }
+    public String getNombreCliente() {
+        return nombreCliente;
+    }
+    public void setNombreCliente(String nombreCliente) {
+        this.nombreCliente = nombreCliente;
+    }
+    public String getDni() {
+        return dni;
+    }
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+    public Long getIdVuelo() {
+        return idVuelo;
+    }
+    public void setIdVuelo(Long idVuelo) {
+        this.idVuelo = idVuelo;
+    }
+}

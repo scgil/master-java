@@ -1,0 +1,10 @@
+package com.cursojava.modelo;
+
+public class Camion extends Vehiculo {
+
+	public Camion(String matricula, String marca, String modelo, String color) {
+		super(matricula, marca, modelo, color);
+		// TODO Auto-generated constructor stub
+	}
+
+}

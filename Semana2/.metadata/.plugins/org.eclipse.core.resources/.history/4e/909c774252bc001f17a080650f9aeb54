@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="com.curso.modelo.PaginaWeb" %>
+<%@ page import="com.curso.service.PaginaWebService" %>
+<%@ page import="java.util.List" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Resultado de la búsqueda</title>
+</head>
+<body>
+
+<%
+PaginaWebService pgs = new PaginaWebService();
+
+List<PaginaWeb> websPorTematica=cs.buscarTodos();
+
+for (Curso curso:listaCursos){
+%>
+<p>Nombre del curso:<%=curso.getNombre() %>--- Nivel del curso:<%=curso.getNivel() %>
+<% }%>
+
+</body>
+</html>

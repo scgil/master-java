@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=03-LibrosCRUD/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.curso.service{LibrosService.java[LibrosService" modifiers="513" timestamp="1735292130784"/>
+    <typeInfo handle="=05-CursosCRUD/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.curso.service{CursoService.java[CursoService" modifiers="513" timestamp="1735316707288"/>
+    <typeInfo handle="=04-LibrosCRUD-BD/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.curso.service{LibroService.java[LibroService" modifiers="513" timestamp="1735310366327"/>
+    <typeInfo handle="=04-LibrosCRUD-BD/C:\/Users\/Admin\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/3.4.1\/spring-data-jpa-3.4.1.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/3.4.1=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1735034397651"/>
+    <typeInfo handle="=05-CursosCRUD-BD/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.curso.service{CursoService.java[CursoService" modifiers="513" timestamp="1735316714791"/>
+    <typeInfo handle="=04-LibrosCRUD-Cliente/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.curso.service{EjemplarService.java[EjemplarService" modifiers="513" timestamp="1735556656089"/>
+    <typeInfo handle="=05-CursosCRUD-Cliente/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.curso.service{FormacionService.java[FormacionService" modifiers="513" timestamp="1735576116924"/>
+    <typeInfo handle="=Proyecto-Vuelos/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.curso.service{VueloService.java[VueloService" modifiers="513" timestamp="1735656981575"/>
+</typeInfoHistroy>

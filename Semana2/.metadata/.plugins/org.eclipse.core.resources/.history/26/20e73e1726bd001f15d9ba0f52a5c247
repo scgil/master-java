@@ -1,0 +1,9 @@
+package com.curso;
+
+public class HolaRecurso3 {
+
+	public HolaRecurso3() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.cursojava.modelo;
+
+public class Gato extends Mascota {
+	
+	private final int NUM_PATAS = 4;
+
+	public Gato(String nombre) {
+		super(nombre);
+	}
+	
+	public void comer() {
+		System.out.println("A los gastos les gusta comer peces y arañas.");
+		
+	}
+	
+	public void jugar() {
+		System.out.println("A "+ nombre+" le gusta jugar con pelotas.");
+		
+	}
+}

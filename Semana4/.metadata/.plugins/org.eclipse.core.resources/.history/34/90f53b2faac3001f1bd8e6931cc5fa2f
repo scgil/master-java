@@ -1,0 +1,21 @@
+package com.curso.model;
+
+public class Curso {
+	private int codCurso;
+	String nombre;
+	double duracion;
+	double precio;
+	public Curso() {
+		super();
+	}
+	public Curso(int codCurso, String nombre, int duracion, double precio) {
+		super();
+		this.codCurso = codCurso;
+		this.nombre = nombre;
+		this.duracion = duracion;
+		this.precio = precio;
+	}
+	
+	
+
+}

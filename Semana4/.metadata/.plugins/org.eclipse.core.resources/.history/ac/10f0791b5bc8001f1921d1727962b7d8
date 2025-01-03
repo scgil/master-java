@@ -1,0 +1,18 @@
+package com.curso.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.curso.model.ReservaRequestDTO;
+
+@RestController
+@RequestMapping("api/reservas")
+public class ReservaController {
+	
+	public ResponseEntity<Void> altaReserva(@RequestBody ReservaRequestDTO reservaRequestDTO){
+		
+		return null;
+	}
+
+}

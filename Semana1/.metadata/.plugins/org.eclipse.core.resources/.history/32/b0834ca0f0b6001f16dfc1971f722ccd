@@ -1,0 +1,15 @@
+package com.cursojava.modelo;
+
+public class Arana extends Animal {
+	
+	private static final int NUM_PATAS = 8; 
+	
+	public Arana() {
+        super(NUM_PATAS);
+    }
+
+    @Override
+    public void comer() {
+        System.out.println("Las arañas comen mosquitos.");
+    }
+}

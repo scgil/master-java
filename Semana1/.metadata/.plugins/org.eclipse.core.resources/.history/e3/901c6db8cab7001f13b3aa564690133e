@@ -1,0 +1,33 @@
+package com.cursojava.excepciones;
+
+import com.cursojava.modelo.Cuenta.Estado;
+
+public class CuentaException extends Exception{
+	private Estado estado;
+	
+	public CuentaException(Estado estado) {
+		super();
+		this.estado = estado;
+	}
+	@Override
+	public String getMessage() {
+		String mensaje;
+		switch (estado) {
+        case BLOQUEADA:
+        	mensaje = "La cuenta está bloqueada. No se pueden realizar operaciones.";
+        	break;
+        case NUMEROS_ROJOS:
+            mensaje = "Fondos insuficientes. La cuenta está en números rojos.";
+            break;
+        case OPERATIVA:
+            mensaje = "La cuenta está operativa.";
+            break;
+        default:
+            mensaje = "Estado desconocido.";
+		}
+		
+		return mensaje;
+		
+	}
+
+}

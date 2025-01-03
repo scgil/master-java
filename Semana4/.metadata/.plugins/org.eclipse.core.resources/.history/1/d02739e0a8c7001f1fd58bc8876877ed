@@ -1,0 +1,67 @@
+package com.curso.model;
+
+import java.time.LocalDate;
+
+
+public class VueloDTO {
+
+    private int idVuelo;  // 
+    private String compania;
+    private LocalDate fechaVuelo; e
+    private double precio;
+    private int plazasDisponibles;
+
+    public int getIdVuelo() {
+        return idVuelo;
+    }
+
+    public void setIdVuelo(int idVuelo) {
+        this.idVuelo = idVuelo;
+    }
+
+    public String getCompania() {
+        return compania;
+    }
+
+    public void setCompania(String compania) {
+        this.compania = compania;
+    }
+
+    public LocalDate getFechaVuelo() {
+        return fechaVuelo;
+    }
+    
+    public void setFechaVuelo(LocalDate fechaVuelo) {
+        this.fechaVuelo = fechaVuelo;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+
+
+    public void setPrecio(double precio) {
+
+        this.precio = precio;
+
+    }
+
+
+
+    public int getPlazasDisponibles() {
+
+        return plazasDisponibles;
+
+    }
+
+
+
+    public void setPlazasDisponibles(int plazasDisponibles) {
+
+        this.plazasDisponibles = plazasDisponibles;
+
+    }
+
+}
+

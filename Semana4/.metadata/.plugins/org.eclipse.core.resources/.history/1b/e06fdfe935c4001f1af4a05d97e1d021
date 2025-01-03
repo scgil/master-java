@@ -1,0 +1,21 @@
+package com.curso.service;
+
+import java.util.List;
+
+import com.curso.model.Libro;
+/**
+ * Interfaz para el servicio de cursos {@CursoServiceImpl}.
+ * Ofrece operaciones para gestionar la clase {@link Curso}
+ * @author Sergio Castro
+ * @version 1.0 2024/12/27
+ */
+public interface LibrosService {
+
+	List<Libro> libros();
+	Libro buscarLibro(int isbn);
+	void altaLibro(Libro libro);
+	void actualizar(Libro libro);
+	List<Libro> eliminarLibro(int isbn);
+	
+	
+}

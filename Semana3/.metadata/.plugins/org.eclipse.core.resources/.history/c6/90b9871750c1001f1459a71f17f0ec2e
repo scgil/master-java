@@ -1,0 +1,82 @@
+package com.curso.dao;
+
+import java.util.List;
+
+import com.curso.modelo.Pelicula;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.TypedQuery;
+
+/**
+ * La clase PeliculaDAO sirve para realizar operaciones con la entidad Pelicula
+ * @author Sergio Castro 
+ * @version 1.0 2023/12/23
+ */
+public class PeliculaRespositoryImpl implements IPeliculaRepository {
+	
+	private EntityManager em;
+
+    // Constructor donde se inyecta el EntityManager
+    public PeliculaRespositoryImpl(EntityManager entityManager) {
+        this.em = entityManager;
+    }  
+
+	public List<Pelicula> findAll() {
+		
+		
+		TypedQuery<Pelicula> consulta = em.createNamedQuery("Pelicula.buscarTodas", Pelicula.class);
+		List<Pelicula> peliculas = consulta.getResultList();
+		
+		return peliculas;
+
+	}
+
+	public List<Pelicula> findByDirectorNombre() {
+		
+		TypedQuery<Pelicula> consulta = em.createNamedQuery("SELECT p FROM Pelicula p WHERE p.nombreDirector= :director", Pelicula.class);
+		
+		consulta.setParameter("director", "Pepito");
+		
+		List<Pelicula> peliculas = consulta.getResultList();
+		
+		return peliculas;
+
+	}
+
+	public List<Pelicula> findByDirectorLikeNombre() {
+		
+		TypedQuery<Pelicula> consulta = em.createNamedQuery("SELECT p FROM Pelicula p WHERE p.nombreDirector LIKE :director", Pelicula.class);
+		
+		consulta.setParameter("director", "P%");
+		
+		List<Pelicula> peliculas = consulta.getResultList();
+		
+		return peliculas;
+		
+
+	}
+
+	public List<Pelicula> findByDirectorIn() {
+		
+		TypedQuery<Pelicula> consulta = em.createNamedQuery("SELECT p FROM Pelicula p WHERE p.nombreDirector IN(:director1, :director2)", Pelicula.class);
+		
+		consulta.setParameter("director1", "Pepito");
+		consulta.setParameter("director2", "Juana");
+			
+		List<Pelicula> peliculas = consulta.getResultList();
+		return peliculas;
+	}
+
+	public List<Pelicula> findByPrecio() {
+		
+		TypedQuery<Pelicula> consulta = em.createNamedQuery("SELECT p FROM Pelicula p WHERE p.precioAlquiler > :precioMin AND p.precioAlquiler < :precioMax", Pelicula.class);
+		
+		consulta.setParameter("precioMin", 2.0);
+		consulta.setParameter("precioMax", 5.50);
+		
+		List<Pelicula> peliculas = consulta.getResultList();
+		
+		return peliculas;
+	}
+
+}

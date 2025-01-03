@@ -1,0 +1,10 @@
+package com.cursojava.modelo;
+
+public class Cafetera {
+	
+	private int capacidadMaxima;
+	private int capacidadActual;
+	
+	public Cafetera()
+
+}

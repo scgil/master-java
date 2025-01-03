@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Lista</title>
+</head>
+<body>
+<h1>Lista de Tareas</h1>
+<form action="/todos" method="post">
+<input type="text" name="task" placeholder="Nueva tarea" required>
+<button type="submit">Agregar</button>
+</form>
+
+<ul>
+<li th:each="todo : ${todos}">
+  <span th:text="${todo.task}"></span>
+  <a th:href="@{/todos/delete/{id}(id=${todo.id})}"> Eliminar</a>
+</li>
+
+</ul>
+</body>
+</html>

@@ -1,0 +1,15 @@
+package com.curso.dao;
+
+import java.util.List;
+
+import com.curso.modelo.Pelicula;
+
+public interface IPeliculaRepository {
+	
+	public List<Pelicula> findAll();
+	public List<Pelicula> findByDirectorNombre();
+	public List<Pelicula> findByDirectorLikeNombre();
+	public List<Pelicula> findByDirectorIn();
+	public List<Pelicula> findByPrecio();
+	
+}

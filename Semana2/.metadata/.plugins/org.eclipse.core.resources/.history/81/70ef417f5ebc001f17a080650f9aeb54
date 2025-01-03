@@ -1,0 +1,55 @@
+package com.curso.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.curso.modelo.Producto;
+
+public class ProductoService {
+
+	List<Producto> productos = List.of(new Producto(1,"Nevera", "Electrodomesticos", 500.50, 5),
+			new Producto(1,"Nevera", "Electrodomesticos", 500.50, 5),
+			new Producto(1,"Nevera", "Electrodomesticos", 500.50, 5),
+			new Producto(1,"Nevera", "Electrodomesticos", 500.50, 5);
+
+		
+	
+	public List<PaginaWeb> paginasWebPorTematica(String tematica) {
+		List<PaginaWeb> paginas = new ArrayList<>();
+		for(PaginaWeb pagina :paginasWeb) {
+			if(pagina.getTematica().equals(tematica)) {
+				paginas.add(pagina);
+			}
+			
+		}
+		return paginas;
+		
+	}
+	
+	public List<String> tematicas(){
+		List<String> tematicas = new ArrayList<>();
+		for(PaginaWeb pagina :paginasWeb) {
+			
+			if(!tematicas.contains(pagina.getTematica())) {
+				tematicas.add(pagina.getTematica());
+			}
+			
+		}
+		return tematicas;
+	}
+	
+	public boolean tematicaExistente(String tematica){
+		
+		
+		List<String> tematicas = tematicas();
+		for(String tema :tematicas) {
+			
+			if(tema.equals(tematica)) {
+				return true;
+			}
+			
+		}
+		return false;
+	}
+
+}

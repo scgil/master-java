@@ -1,0 +1,44 @@
+package com.curso.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.curso.model.Hotel;
+import com.curso.model.Vuelo;
+import com.curso.service.VueloService;
+
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+/** 
+ * Controlador REST para el recurso de la entidad {@link Vuelo}. 
+ * Este controlador proporciona endpoints para acceder a los datos de los vuelos. Emplea el servicio {@link VueloService}
+ * @author Sergio Castro
+ * @version 1.0 2024/12/31
+ */
+@RestController
+@RequestMapping("api/vuelos")
+public class VueloController {
+	@Autowired
+	private VueloService vueloService;
+	
+	@Operation(summary = "Obtiene todos los vuelos", description = "Devuelve una lista de todos los vuelos en la base de datos", responses = { 
+			@ApiResponse(responseCode = "200", description = "Lista de vuelos obtenida exitosamente", content = @Content(schema = @Schema(implementation = Vuelo.class))),
+			 })
+	@GetMapping
+	public ResponseEntity<List<Vuelo>> findAllVuelos(){
+		List<Vuelo> vuelos = vueloService.findAllVuelos();
+		return new ResponseEntity<>(vuelos, HttpStatus.OK);
+	}
+	
+	
+	
+
+}

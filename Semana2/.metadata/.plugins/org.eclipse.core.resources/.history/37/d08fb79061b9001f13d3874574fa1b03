@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Búsqueda</title>
+</head>
+<body>
+    <form action="Servlet method="post">
+    	<label for="buscador">Buscador</label>
+    		<input type="text" name="textoBusqueda"><br>
+		<button  type="submit" id="enviar">Enviar</button>
+    </form>
+
+</body>
+</html>

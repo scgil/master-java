@@ -1,0 +1,32 @@
+package repositorio;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import com.curso.modelo.Comentario;
+import com.curso.modelo.Noticia;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.TypedQuery;
+
+
+public class NoticiaRespositoryImpl implements INoticiaRepository {
+	private EntityManager em;
+	
+	public List<Noticia> findAll() {
+		TypedQuery<Noticia> consulta = em.createNamedQuery("Noticia.findAll", Noticia.class);
+		List<Noticia> noticias = consulta.getResultList();
+		return noticias;
+	}
+
+	public List<Noticia> findByAutor(String autor) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Noticia> findByFecha(LocalDate fecha) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

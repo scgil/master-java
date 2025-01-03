@@ -1,0 +1,14 @@
+package com.curso.modelo;
+
+import java.util.List;
+
+public class Persona {
+
+	public Persona() {
+		private String nombre;
+		private List<String> curso;
+		
+		
+	}
+
+}

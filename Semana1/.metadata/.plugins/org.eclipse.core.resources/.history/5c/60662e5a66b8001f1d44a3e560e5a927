@@ -1,0 +1,23 @@
+package com.cursojava.funcionalidades.test;
+
+import org.junit.jupiter.api.Test;
+
+import com.cursojava.funcionalidades.Calculadora;
+
+class CalculadoraTest {
+/*
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+*/
+	@Test
+	void test() {
+		//Arrange---organizar
+		Calculadora calculadora = new Calculadora();
+		//Act-------ejecutar, actuar
+		
+		//Assert----aseverar
+	}
+	
+}

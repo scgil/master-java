@@ -1,0 +1,14 @@
+package com.curso.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.curso.model.Curso;
+
+public interface CursoRepository extends JpaRepository<Curso, Integer> {
+	@Query("SELECT c FROM Curso c WHERE c.precio >= :precioMin AND c.precio <= :precioMax")
+	List<Curso> cursosPorPrecio(double precioMin, double precioMax);
+
+}

@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Alta de producto</title>
+</head>
+<body>
+<h1>Alta de producto</h1>
+<form action="InsertarServlet" method="post">
+    	<label for="nombre">Nombre</label>
+    		<input type="text" name="nombre" required><br>
+    	<select name="categoria">
+		<% for (String categoria:listaCategorias){	 %> 
+  			<option value="<%=categoria%>"><%=categoria%></option> 
+		<% }%> 
+ 		</select>
+		<button  type="submit" id="enviar">Enviar</button>
+    </form>
+</body>
+</html>
